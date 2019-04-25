@@ -11,7 +11,7 @@ body{
     height: 100vh;
 }
 
-.container-contato {
+.faleConosco {
     background-image: url(../img/foto_contato.jpg);
     background-size: cover;
     background-position: center;

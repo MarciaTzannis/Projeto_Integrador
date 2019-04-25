@@ -1,11 +1,20 @@
+
+/*CSS HOME (MARCIA)*/ 
+
 * {
     box-sizing: border-box;
 }
 
-body {
-    font-size: 16px;
+body{
     background-color: #fff;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    height: 100vh;
 }
+
 
 
 .navbar {
@@ -30,6 +39,8 @@ body {
     width: 12vw;
     margin: 10px 8px;
 }
+
+/*CSS MODALIDADES (DANIEL)*/ 
 
 .menu-suspenso{
     margin: 60px -50px;
@@ -62,11 +73,11 @@ body {
   }
   
   /* When the input field gets focus, change its width to 100% */
-.procura  input[type=text]:focus {
+.procura input[type=text]:focus {
     width: 150%;
   } 
 
-  .section{
+.section{
       height: 100%;
       margin-top: 20px;
   }
@@ -91,8 +102,10 @@ body {
     color: #fff;
 }
 
-/* .carrossel {
-   } */
+.carousel-inner img {
+    width: 100%; /* Set width to 100% */
+    margin: auto;
+  }
    
 .logotipos {
     display: flex;
@@ -134,12 +147,69 @@ body {
     text-decoration: none;
     color: #4f4f4f;
 }
+/* CSS da Gi*/
+h1 {
+    margin: 20px;
+}
+/*
+body{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    height: 100vh;
+}*/
 
-/* .caption h3:hover{
-    color: white;
-    text-decoration: none;
-} */
+#faleConosco {
+    background-image: url("../img/foto_contato.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+}
 
+.formulario{
+    border: 1px solid lightgrey;
+    background-color:   rgba(255,255,255,0.7);
+    padding: 10px;
+    margin: 90px auto;
+    width: 90vw;
+    height: 70vh;
+}
+
+.imagem-sm1 {
+    width:17.4em; 
+}
+
+.imagem-sm2 {
+    width: 19em;
+       }
+
+.wrapper {
+    padding-top: 90px;
+    margin: 0 auto;
+}
+
+.integrantes{
+    padding: 8em 0 20em 2em;
+}
+.integrantes img{
+    width: 10em;
+    height: 10em;
+    filter: grayscale(100%)
+}
+
+.icones img{
+    width: 3em;
+    margin: 15em 1em 0 0;
+}
+
+.texto-sm {
+    margin: 0 0 0 2em;
+}
+
+/*CSS FOOTER (MARCIA)*/ 
 
 footer {
     position: absolute;
@@ -171,7 +241,8 @@ footer a:hover {
     padding: 5px 0 5px 0;
 }
 
-/*NAV EDU*/ 
+
+/*CSS LOGIN (EDU)*/ 
 
 #login-dp{
     min-width: 250px;
@@ -223,4 +294,12 @@ footer a:hover {
         background-color: inherit;
         border-top:0 none;
     }
+    .carousel-inner .carousel-caption button{
+        display: none;
+    }
+
+    .carousel-inner .carousel-caption p{
+        display: none;
+    }
 }
+
