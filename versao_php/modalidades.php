@@ -45,7 +45,7 @@
     </div>
 </div>
 
-<section class="section">
+<section class="sectionModalidades">
     <div class="owl-carousel owl-theme carrossel">
 
         <?php foreach ($modalidades as $nomeModalidade => $logoModalidade) : ?>

@@ -43,7 +43,10 @@ body{
 /*CSS MODALIDADES (DANIEL)*/ 
 
 .menu-suspenso{
-    margin: 60px -50px;
+    margin-top: 120px;
+    margin-bottom: 20px;
+    margin-right: auto;
+    margin-left: auto;
     display: inline-block;
 }
 
@@ -51,12 +54,12 @@ body{
     height: 250px;
     overflow: auto;
 }
-.procura {
+/* .procura {
     display: inline-block;
     margin-left: 60px;
-}
+} */
 .procura input[type=text] {
-  width: 200px;
+  width: 60vw;
   height: 34px;
   box-sizing: border-box;
   border: 2px solid #ccc;
@@ -74,12 +77,12 @@ body{
   
   /* When the input field gets focus, change its width to 100% */
 .procura input[type=text]:focus {
-    width: 150%;
+    width: 90vw;
   } 
 
-.section{
+.sectionModalidades{
       height: 100%;
-      margin-top: 20px;
+      margin-top: 140px;
   }
 .tituloModalidade h2{
     margin: 0px;
