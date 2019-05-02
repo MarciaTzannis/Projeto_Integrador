@@ -40,6 +40,9 @@ body{
     margin: 10px 8px;
 }
 
+.carousel-inner>.item>img {
+    height: 100vh;
+}
 /*CSS MODALIDADES (DANIEL)*/ 
 
 .menu-suspenso{
@@ -182,12 +185,25 @@ body{
 }
 
 .imagem-sm1 {
-    width:17.4em; 
+    max-width:17.4em;
+    width: auto;
+    height: auto; 
+    display: inline-block;
 }
-
+.imagem-sm1 img{
+    width: 100%;
+}
 .imagem-sm2 {
-    width: 19em;
-       }
+    max-width: 19em;
+    width: auto;
+    height: auto; 
+    display: inline-block;
+
+}
+.imagem-sm2 img{
+    margin-bottom: 17px;
+    width: 100%;
+}
 
 .wrapper {
     padding-top: 90px;
@@ -215,8 +231,8 @@ body{
 /*CSS FOOTER (MARCIA)*/ 
 
 footer {
-    position: absolute;
-    bottom: 0px;
+    /* position: absolute;
+    bottom: 0px; */
     width: 100%;
     display: flex;
     align-content: flex-end;
@@ -288,7 +304,7 @@ footer a:hover {
     background-color:#59b5fa;
 }
 
-@media(max-width:768px){
+@media(max-width:767px){
     #login-dp{
         background-color: inherit;
         color: #fff;
@@ -303,6 +319,9 @@ footer a:hover {
 
     .carousel-inner .carousel-caption p{
         display: none;
+    }
+    .carousel-inner>.item>img {
+        height: auto;
     }
 }
 

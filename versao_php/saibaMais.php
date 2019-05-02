@@ -2,7 +2,7 @@
     <div id="saibaMais" class="wrapper">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-lg-5">
+                <div class="col-xs-12 col-sm-12 col-md-6">
                     <div id="box1">
                         <section class="texto-sm">
                             <h1>Saiba mais...</h1>
@@ -19,15 +19,13 @@
                         </section>
                     </div>
                 </div>
-                
-
-                <div class="col-lg-3">
-                    <div class="imagem-sm1"><img class="img-responsive" src="img/ms04.jpg" alt="LALALA"></div>
+                <div class="col-xs-6 col-sm-6 col-md-3">
+                    <div class="imagem-sm1"><img src="img/ms04.jpg" alt="LALALA"></div>
                 </div>
-                <div class="col-lg-3">
-                    <div class="imagem-sm2"><img class="img-responsive" src="img/ms02.jpg" alt="LALALA"></div>
-                    <br>
-                    <div class="imagem-sm2"><img class="img-responsive" src="img/ms01.jpg" alt="LALALA"></div>
+                <div class="col-xs-6 col-sm-6 col-md-3">
+                    <div class="imagem-sm2"><img src="img/ms02.jpg" alt="LALALA"></div>
+                    
+                    <div class="imagem-sm2"><img src="img/ms01.jpg" alt="LALALA"></div>
                 </div>
             </div>
         </div>

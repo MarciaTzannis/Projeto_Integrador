@@ -4,8 +4,8 @@
 ?>
 
 <!-- Menu -->
-<div class="container-fluid">
-    <div class="row">
+<div  class="container-fluid">
+    <div id="paginaInicial" class="row">
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
             <!-- Indicators -->
             <ol class="carousel-indicators">
@@ -83,9 +83,7 @@
         </div>
     </div>
 </div>
-</div>
-</div>
-</div>
+
 
 
 <?php
