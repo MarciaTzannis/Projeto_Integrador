@@ -43,6 +43,18 @@ body{
 .carousel-inner>.item>img {
     height: 100vh;
 }
+
+.carousel-caption .btn {
+    text-shadow: none;
+    background-color: #fff;
+    color: #4f4f4f; 
+}
+
+.carousel-caption .btn:hover {
+    text-shadow: none;
+    background-color: #4f4f4fa8;
+    color: #fff;
+}
 /*CSS MODALIDADES (DANIEL)*/ 
 
 .menu-suspenso{
