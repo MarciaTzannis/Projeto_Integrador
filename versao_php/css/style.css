@@ -165,86 +165,122 @@ body{
     text-decoration: none;
     color: #4f4f4f;
 }
-/* CSS da Gi*/
-h1 {
-    margin: 20px;
-}
-/*
-body{
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
-    height: 100vh;
-}*/
 
-#faleConosco {
-    background-image: url("../img/foto_contato.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 80vh;
-}
+/* CSS da Giseli - Saiba Mais */
 
-.formulario{
-    border: 1px solid lightgrey;
-    background-color:   rgba(255,255,255,0.7);
-    padding: 10px;
-    margin: 90px auto;
-    width: 90vw;
-    height: 70vh;
-}
-
-.imagem-sm1 {
-    max-width:17.4em;
-    width: auto;
-    height: auto; 
-    display: inline-block;
-}
-.imagem-sm1 img{
-    width: 100%;
-}
-.imagem-sm2 {
-    max-width: 19em;
-    width: auto;
-    height: auto; 
-    display: inline-block;
-
-}
-.imagem-sm2 img{
-    margin-bottom: 17px;
-    width: 100%;
-}
-
-.wrapper {
-    padding-top: 90px;
+#saiba-mais {
+    padding-top: 100px;
+    padding-bottom: 90px;
     margin: 0 auto;
 }
 
-.integrantes{
-    padding: 8em 0 20em 2em;
-}
-.integrantes img{
-    width: 10em;
-    height: 10em;
-    filter: grayscale(100%)
+.texto-sm{
+    margin: 2em;
 }
 
-.icones img{
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+    position: relative;
+    align-content: center;
+}
+
+.imagem-sm1 {
+    align-items: center;
+    margin: 1em 0px 2em 0;
+    padding: 0 16px;
+    
+}
+
+.imagem-sm2 {
+    margin: 18px 1em 0 0.3em;
+    padding: 0;
+       }
+
+/* FIM DO SAIBA MAIS*/
+
+/* CSS da Gi - Fale Conosco novo*/
+
+.icones img {
     width: 3em;
-    margin: 15em 1em 0 0;
+    padding: 0 !important;
+    margin: 0 !important;
 }
 
-.texto-sm {
-    margin: 0 0 0 2em;
+  
+  .fale-conosco {
+    margin: 20px auto;
+    padding: 20px;
+  }
+  
+    
+  input,
+  select {
+    margin-bottom: 20px;
+    border-radius: 0 !important;
+  }
+  
+  .panel.panel-default {
+    border-radius: 0;
+  }
+  
+  .padding {
+    padding: 40px;
+  }
+  
+  .no-padding {
+    padding: 0;
+    margin: 0;
+  }
+  
+  .border-left {
+    border-left: 1px solid #ccc;
+  }
+  
+  .badge {
+    margin-left: 5px;
+    background-color: #5bc0de;
+  }
+  
+  .badge a {
+    color: #fff;
+  }
+  
+  .banner {
+    background-image: url("../img/grupo.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    height: 32.7vw;
+    margin-bottom: -1px;
+
+          }
+.container-fc{
+    margin-bottom: 12em;
+
 }
+    
+  .limpar,
+  .enviar {
+    float: right;
+    margin: 20px 5px 0 0;
+  }
+  
+  .enviar {
+    margin: 20px 0 0 0;
+  }
+
+/* FIM CSS da Gi - Fale Conosco novo */
+
+
 
 /*CSS FOOTER (MARCIA)*/ 
 
 footer {
-    /* position: absolute;
-    bottom: 0px; */
+    position: fixed;
+    z-index: 10;
+    bottom: 0px;
     width: 100%;
     display: flex;
     align-content: flex-end;
@@ -320,6 +356,7 @@ footer a:hover {
     .carousel-inner>.item>img {
         height: auto;
     }
+}
 @media(max-width:767px){
     #login-dp{
         background-color: inherit;
@@ -340,4 +377,11 @@ footer a:hover {
         height: auto;
     }
 }
-
+@media(min-width:320px) and (max-width:1024px){
+.imagem-sm1 {
+    display: none;
+}
+.banner {
+    height: 45vw;
+}
+}
