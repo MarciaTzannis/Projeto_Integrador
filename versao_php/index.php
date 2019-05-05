@@ -4,7 +4,7 @@
 ?>
 
 <!-- Menu -->
-<div  class="container-fluid">
+<div class="container-fluid">
     <div id="paginaInicial" class="row">
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
             <!-- Indicators -->
@@ -23,7 +23,7 @@
                 <div class="item active">
                     <img src="img/carousel1.jpg" class="img-responsive" alt="foto1" style="width:100%;">
                     <div class="carousel-caption">
-                        <a href="cadastro1.html"> <button class="btn">Cadastre-se aqui!</button></a>
+                        <a href="cadastroFinal.php"> <button class="btn">Cadastre-se aqui!</button></a>
                         <p>Cadastre-se na melhor rede social de esportes do planeta!</p>
                     </div>
                 </div>

@@ -7,9 +7,9 @@
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
                 <li class="active">
-                <li><a href="#saibaMais">Saiba Mais</a></li>
+                <li><a href="#saiba-mais">Saiba Mais</a></li>
                 <li><a href="#modalidades">Modalidades</a></li>
-                <li><a href="#faleConosco">Fale Conosco</a></li>
+                <li><a href="#fale-conosco">Fale Conosco</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="#"><span class="glyphicon glyphicon-user"></span>Sign up</a></li>

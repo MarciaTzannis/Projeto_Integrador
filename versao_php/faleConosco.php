@@ -1,4 +1,4 @@
-<section class="fale-conosco">
+<section id="fale-conosco">
     <div class="container container-fc">
         <h3>Escolha a melhor forma de falar com a gente:</h3>
         <div id="panel" class="panel panel-default no-padding">
@@ -15,10 +15,10 @@
                                 <div class="col-md-12 icones">
                                     <a href="https://www.google.com.br/"> <img src="img/icones/facebook.svg"
                                             alt="facebook"></a>
-                                
+
                                     <a href="https://www.google.com.br/"><img src="img/icones/instagram.svg"
                                             alt="instagram"></a>
-                                               
+
                                     <a href="https://www.google.com.br/"><img src="img/icones/twitter.svg"
                                             alt="twitter"></a>
                                 </div>
@@ -70,6 +70,5 @@
             </form>
         </div>
     </div>
-</div>
+    </div>
 </section>
-
