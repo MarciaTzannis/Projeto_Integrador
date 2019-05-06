@@ -35,13 +35,32 @@ body {
     background: transparent;
 }
 
+.navbar-header {
+    display:inline-block;
+}
+
 .navbar-header img {
-    width: 12vw;
+    width: 130px;
     margin: 10px 8px;
 }
 
 .carousel-inner>.item>img {
     height: 100vh;
+}
+
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
+    background-color: #273140ab;
+
+}
+
+.menu-mobile{
+    display: none;
+    float: right;
+    border: none;
+    background-color: transparent;
+    font-size:1.4em;
+    color: rgba(255, 255, 255, 0.6);
+    padding-top: 3vh;
 }
 
 .carousel-caption .btn {
@@ -394,6 +413,9 @@ footer a:hover {
     #login-dp .bottom {
         background-color: inherit;
         border-top: 0 none;
+    }
+    .menu-mobile{
+        display: inline-block;
     }
 
     .carousel-inner .carousel-caption button {
