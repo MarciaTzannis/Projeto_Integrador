@@ -1,8 +1,5 @@
 <footer class="text-center">
-    <a href="index.php" class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
-        <span class="glyphicon glyphicon-chevron-up"></span>
-    </a>
-    <p>Copyright &copy; MatchSports</p>
+       <p>Copyright &copy; MatchSports</p>
 </footer>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -27,6 +24,7 @@ $('.owl-carousel').owlCarousel({
     }
 })
 </script>
+<script src="js/main.js"></script>
 </body>
 
 </html>

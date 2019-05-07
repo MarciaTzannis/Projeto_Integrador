@@ -4,7 +4,7 @@
 ?>
 
 <!-- Menu -->
-<div class="container-fluid">
+<div id="home" class="container-fluid">
     <div id="paginaInicial" class="row">
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
             <!-- Indicators -->

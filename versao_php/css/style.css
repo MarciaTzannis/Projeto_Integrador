@@ -4,6 +4,9 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
 body {
     background-color: #fff;
     background-size: cover;
@@ -35,13 +38,32 @@ body {
     background: transparent;
 }
 
+.navbar-header {
+    display:inline-block;
+}
+
 .navbar-header img {
-    width: 12vw;
+    width: 130px;
     margin: 10px 8px;
 }
 
 .carousel-inner>.item>img {
     height: 100vh;
+}
+
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
+    background-color: #273140ab;
+
+}
+
+.menu-mobile{
+    display: none;
+    float: right;
+    border: none;
+    background-color: transparent;
+    font-size:1.4em;
+    color: rgba(255, 255, 255, 0.6);
+    padding-top: 1vh;
 }
 
 .carousel-caption .btn {
@@ -217,6 +239,8 @@ body {
 #fale-conosco {
     margin: 20px auto;
     padding: 40px;
+    padding-bottom: 0;
+    margin-bottom: 0;
 }
 
 
@@ -264,7 +288,7 @@ select {
 }
 
 .container-fc {
-    margin-bottom: 12em;
+    margin-bottom: 0.8em;
 
 }
 
@@ -285,7 +309,7 @@ select {
 /*CSS FOOTER (MARCIA)*/
 
 footer {
-    position: fixed;
+    /* position: fixed; */
     z-index: 10;
     bottom: 0px;
     width: 100%;
@@ -368,7 +392,7 @@ footer a:hover {
     background-color: #59b5fa;
 }
 
-/* FORMULÁRIO cadastro */
+/* FORMULÁRIO cadastro*/
 
 #formulario {
     position: relative;
@@ -378,12 +402,12 @@ footer a:hover {
     margin-top: 60px;
 }
 
+/* Página POST */
 .post {
     position: fixed;
     font-style: normal;
     margin-top: 50px;
 }
-
 
 @media(max-width:1200px) {
     .carousel-inner>.item>img {
@@ -401,6 +425,9 @@ footer a:hover {
         background-color: inherit;
         border-top: 0 none;
     }
+    .menu-mobile{
+        display: inline-block;
+    }
 
     .carousel-inner .carousel-caption button {
         display: none;
@@ -414,7 +441,6 @@ footer a:hover {
         height: auto;
     }
 }
-
 
 @media(min-width:320px) and (max-width:1024px) {
     .imagem-sm1 {

@@ -50,7 +50,7 @@
 
         <?php foreach ($modalidades as $nomeModalidade => $logoModalidade) : ?>
         <div class="item logo">
-            <a href="post.html">
+            <a href="post.php">
                 <img src="<?php echo"img/$logoModalidade";?>" alt="<?php echo$nomeModalidade; ?>">
                 <div class="caption">
                     <h3><?php echo$nomeModalidade; ?></h3>

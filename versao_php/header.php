@@ -1,18 +1,19 @@
 <nav class="navbar navbar-fixed-top">
     <div class="container-fluid">
         <div class="navbar-header">
-            <a href="index.php"><img src="img/Nome.png" title="MatchSports" /></a>
+            <a href="index.php#home"><img src="img/Nome.png" title="MatchSports" /></a>
 
         </div>
-        <div class="collapse navbar-collapse" id="myNavbar">
+        <button class="menu-mobile" title="menu" data-toggle="collapse" data-target=".menu-principal">&#9776;</button>
+        <div class="collapse navbar-collapse menu-principal" id="myNavbar">
             <ul class="nav navbar-nav">
                 <li class="active">
-                <li><a href="#saiba-mais">Saiba Mais</a></li>
-                <li><a href="#modalidades">Modalidades</a></li>
-                <li><a href="#fale-conosco">Fale Conosco</a></li>
+                <li><a href="index.php#saiba-mais">Saiba Mais</a></li>
+                <li><a href="index.php#modalidades">Modalidades</a></li>
+                <li><a href="index.php#fale-conosco">Fale Conosco</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="#"><span class="glyphicon glyphicon-user"></span>Sign up</a></li>
+                <li><a href="cadastroFinal.php"><span class="glyphicon glyphicon-user"></span>Sign up</a></li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Login</b> <span
                             class="caret"></span></a>
@@ -50,7 +51,7 @@
                                     </form>
                                 </div>
                                 <div class="bottom text-center">
-                                    Novo por aqui? <a href="#"><b>Cadastre-se</b></a>
+                                    Novo por aqui? <a href="cadastroFinal.php"><b>Cadastre-se</b></a>
                                 </div>
                             </div>
                         </li>
