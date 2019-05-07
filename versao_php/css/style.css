@@ -35,32 +35,13 @@ body {
     background: transparent;
 }
 
-.navbar-header {
-    display:inline-block;
-}
-
 .navbar-header img {
-    width: 130px;
+    width: 12vw;
     margin: 10px 8px;
 }
 
 .carousel-inner>.item>img {
     height: 100vh;
-}
-
-.nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
-    background-color: #273140ab;
-
-}
-
-.menu-mobile{
-    display: none;
-    float: right;
-    border: none;
-    background-color: transparent;
-    font-size:1.4em;
-    color: rgba(255, 255, 255, 0.6);
-    padding-top: 3vh;
 }
 
 .carousel-caption .btn {
@@ -387,7 +368,7 @@ footer a:hover {
     background-color: #59b5fa;
 }
 
-/* FORMULÁRIO */
+/* FORMULÁRIO cadastro */
 
 #formulario {
     position: relative;
@@ -395,6 +376,12 @@ footer a:hover {
     padding-right: 15px;
     padding-left: 15px;
     margin-top: 60px;
+}
+
+.post {
+    position: fixed;
+    font-style: normal;
+    margin-top: 50px;
 }
 
 
@@ -414,9 +401,6 @@ footer a:hover {
         background-color: inherit;
         border-top: 0 none;
     }
-    .menu-mobile{
-        display: inline-block;
-    }
 
     .carousel-inner .carousel-caption button {
         display: none;
@@ -430,6 +414,7 @@ footer a:hover {
         height: auto;
     }
 }
+
 
 @media(min-width:320px) and (max-width:1024px) {
     .imagem-sm1 {

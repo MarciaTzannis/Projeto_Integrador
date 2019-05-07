@@ -27,7 +27,6 @@ $('.owl-carousel').owlCarousel({
     }
 })
 </script>
-<script src="js/main.js"></script>
 </body>
 
 </html>

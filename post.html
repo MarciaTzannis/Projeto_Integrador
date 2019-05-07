@@ -2,57 +2,105 @@
 <html lang="en">
 
 <head>
-  <title>Post</title>
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+    integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
   <link rel="shortcut icon" href="img/Logo Match Sports.png">
   <link rel="stylesheet" href="css/home.css">
   <link rel="shortcut icon" href="img/Logo Match Sports.png">
+  <title>Post</title>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 </head>
 
 <body>
+  <header>
     <nav class="navbar navbar-fixed-top">
-        <div class="container-fluid">
+      <div class="container-fluid">
         <div class="navbar-header">
-            <a href="index.html"><img src="img/Nome.png" title="MatchSports"/></a>
+          <a href="index.html"><img src="img/Nome.png" title="MatchSports" /></a>
+
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
-            <ul class="nav navbar-nav">
-                <li class="active">
-                <li><a href="Saiba_mais.html">Saiba Mais</a></li>
-                <li><a href="modalidades.php">Modalidades</a></li>
-                <li><a href="contato.html">Fale Conosco</a></li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="#"><span class="glyphicon glyphicon-user"></span>Sign up</a></li>
-                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span>Login</a></li>
-            </ul>
+          <ul class="nav navbar-nav">
+            <li class="active">
+            <li><a href="Saiba_mais.html">Saiba Mais</a></li>
+            <li><a href="modalidades.php">Modalidades</a></li>
+            <li><a href="contato.html">Fale Conosco</a></li>
+          </ul>
+          <button class="menu-mobile" title="menu">&#9779;</button>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#"><span class="glyphicon glyphicon-user"></span>Sign up</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Login</b> <span class="caret"></span></a>
+              <ul id="login-dp" class="dropdown-menu">
+                <li>
+                  <div class="row">
+                    <div class="col-md-12">
+                      Login via
+                      <div class="social-buttons">
+                        <a href="#" class="btn btn-fb"><i class="fa fa-facebook"></i> Facebook</a>
+                        <a href="#" class="btn btn-tw"><i class="fa fa-google+"></i> Google+</a>
+                      </div>
+                      ou
+                      <form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
+                        <div class="form-group">
+                          <label class="sr-only" for="exampleInputEmail2">e-mail</label>
+                          <input type="email" class="form-control" id="exampleInputEmail2"
+                            placeholder="E-mail cadastrado" required>
+                        </div>
+                        <div class="form-group">
+                          <label class="sr-only" for="exampleInputPassword2">senha</label>
+                          <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Senha"
+                            required>
+                          <div class="help-block text-right"><a href="">Esqueceu sua senha?</a></div>
+                        </div>
+                        <div class="form-group">
+                          <button type="submit" class="btn btn-primary btn-block">Entrar</button>
+                        </div>
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox"> Mantenha-me Logado
+                          </label>
+                        </div>
+                      </form>
+                    </div>
+                    <div class="bottom text-center">
+                      Novo por aqui? <a href="#"><b>Cadastre-se</b></a>
+                    </div>
+                  </div>
+                </li>
+              </ul>
         </div>
+
+        <!-- <ul class="nav navbar-nav navbar-right"> -->
+
     </nav>
+  </header>
 
   <div class="container">
 
-      <div class="container-post">
-        <h3>Evento - Corrida das Estações - 5KM.</h3>
-        <p>Data: 21/05/2019 - Local : Pacaembu</p><br>
-      </div>  
+    <div class="container-post">
+      <h3>Evento - Corrida das Estações - 5KM.</h3>
+      <p>Data: 21/05/2019 - Local : Pacaembu</p><br>
+    </div>
 
     <!-- Left-aligned media object -->
-      <div class="media">
-          <div class="media-left">
-            <img src="img/foto.jpg" class="media-object" style="width:60px">
-          </div>
-          <div class="media-body">
-            <h4 class="media-heading">Douglas Martins</h4>
-            <p>Olá Pessoal observei que todos estão aptos para nosso encontro, podemos nos encontrar uma hora antes?
-              Alguém tem alguma sugestão de local para nos encontrar para o aquecimento?
-            </p>
-          </div>
+    <div class="media">
+      <div class="media-left">
+        <img src="img/foto.jpg" class="media-object" style="width:60px">
       </div>
+      <div class="media-body">
+        <h4 class="media-heading">Douglas Martins</h4>
+        <p>Olá Pessoal observei que todos estão aptos para nosso encontro, podemos nos encontrar uma hora antes?
+          Alguém tem alguma sugestão de local para nos encontrar para o aquecimento?
+        </p>
+      </div>
+    </div>
     <hr>
 
     <!-- Left-aligned media object -->
@@ -91,7 +139,7 @@
     </div>
     <hr>
 
-    
+
     <!-- Left-aligned media object -->
     <div class="media">
       <div class="media-left">
@@ -103,13 +151,13 @@
       </div>
     </div>
     <hr>
-  </div>  
-    <footer class="text-center">
-        <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
-          <span class="glyphicon glyphicon-chevron-up"></span>
-        </a>
-        <p>Copyright &copy; MatchSports</p> 
-    </footer>
+  </div>
+  <footer class="text-center">
+    <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+      <span class="glyphicon glyphicon-chevron-up"></span>
+    </a>
+    <p>Copyright &copy; MatchSports</p>
+  </footer>
 
 </body>
 
