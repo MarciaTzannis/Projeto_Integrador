@@ -4,9 +4,10 @@
     box-sizing: border-box;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
+
 body {
     background-color: #fff;
     background-size: cover;
@@ -39,7 +40,7 @@ body {
 }
 
 .navbar-header {
-    display:inline-block;
+    display: inline-block;
 }
 
 .navbar-header img {
@@ -51,17 +52,19 @@ body {
     height: 100vh;
 }
 
-.nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
+.nav .open>a,
+.nav .open>a:focus,
+.nav .open>a:hover {
     background-color: #273140ab;
 
 }
 
-.menu-mobile{
+.menu-mobile {
     display: none;
     float: right;
     border: none;
     background-color: transparent;
-    font-size:1.4em;
+    font-size: 1.4em;
     color: rgba(255, 255, 255, 0.6);
     padding-top: 1vh;
 }
@@ -282,7 +285,7 @@ select {
     background-repeat: no-repeat;
     background-size: cover;
     max-width: 100%;
-    height: 32.7vw;
+    height: 35vw;
     margin-bottom: -1px;
 
 }
@@ -425,7 +428,8 @@ footer a:hover {
         background-color: inherit;
         border-top: 0 none;
     }
-    .menu-mobile{
+
+    .menu-mobile {
         display: inline-block;
     }
 
