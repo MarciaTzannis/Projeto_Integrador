@@ -1,28 +1,28 @@
 <?php $modalidades = [
-        "Badminton" => "logobadminton.png",
-        "Basquete" => "logobasquete.png",
-        "Bicicleta" =>"logobicicleta.png",
-        "Boliche" => "logoboliche.png",
-        "Caminhada" => "logocaminhada.png",
-        "Capoeira" => "logocapoeira.png",
-        "Corrida" => "logocorrida.png",
-        "Funcional" => "logofuncional.png",
+        "Badminton"         => "logobadminton.png",
+        "Basquete"          => "logobasquete.png",
+        "Bicicleta"         =>"logobicicleta.png",
+        "Boliche"           => "logoboliche.png",
+        "Caminhada"         => "logocaminhada.png",
+        "Capoeira"          => "logocapoeira.png",
+        "Corrida"           => "logocorrida.png",
+        "Funcional"         => "logofuncional.png",
         "Futebol Americano" => "logofuteamericano.png",
-        "Futebol" => "logofutebol.png",
-        "Handebol" => "logohandeball.png",
-        "Rugby" => "logorugby.png",
-        "Sinuca" => "logosinuca.png",
-        "Skate" => "logoskate.png",
-        "Slackline" => "logoslackline.png",
-        "Stand Up Paddle" => "logostandup.png",
-        "Surf" => "logosurf.png",
-        "Tênis" => "logotenis.png",
-        "Tênis de mesa" => "logotenismesa.png",
-        "Volei" => "logovoley.png",
-        "Volei de Praia" => "logovoleypraia.png",
-        "Xadrez" => "logoxadrez.png",
-        "Yoga" => "logoyoga.png",
-        "Outros" => "logooutros.png",
+        "Futebol"           => "logofutebol.png",
+        "Handebol"          => "logohandeball.png",
+        "Rugby"             => "logorugby.png",
+        "Sinuca"            => "logosinuca.png",
+        "Skate"             => "logoskate.png",
+        "Slackline"         => "logoslackline.png",
+        "Stand Up Paddle"   => "logostandup.png",
+        "Surf"              => "logosurf.png",
+        "Tênis"             => "logotenis.png",
+        "Tênis de mesa"     => "logotenismesa.png",
+        "Volei"             => "logovoley.png",
+        "Volei de Praia"    => "logovoleypraia.png",
+        "Xadrez"            => "logoxadrez.png",
+        "Yoga"              => "logoyoga.png",
+        "Outros"            => "logooutros.png",
 ];
 ?>
 
@@ -50,7 +50,7 @@
 
         <?php foreach ($modalidades as $nomeModalidade => $logoModalidade) : ?>
         <div class="item logo">
-            <a href="post.php">
+            <a href="feed.php">
                 <img src="<?php echo"img/$logoModalidade";?>" alt="<?php echo$nomeModalidade; ?>">
                 <div class="caption">
                     <h3><?php echo$nomeModalidade; ?></h3>
