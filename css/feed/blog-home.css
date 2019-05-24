@@ -6,12 +6,46 @@
 body {
   padding-top: 56px;
 }
-.foto-post{
-  display: inline-block;
-  height: 100px;
-  width: 100px;
-}
+
 
 .evento{
   border: 1px solid black;
+  margin-top: 10px;
+  /* background: linear-gradient(to bottom right, #25a1dd 0%, #a4cb5b 100%); */
+}
+
+.card-body h2{
+  margin-left: 30px;
+
+}
+
+.img-feed{
+  float: left;
+  display: inline-block;
+  margin:0 10px;
+  width: 20%;
+}
+.foto-post{
+  width: 100%
+}
+
+.descricao-feed{
+  display: inline-block;
+  width: 77%;
+}
+.card-footer{
+  margin-top: 5px;
+}
+
+@media (max-width:576px) {
+
+.card-body h2 {
+    margin-left: 30px;
+    display: inline-block;
+    width: 50%;
+}
+
+.descricao-feed{
+  display: inline-block;
+  width: 100%;
 }
