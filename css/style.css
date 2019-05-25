@@ -407,7 +407,7 @@ footer a:hover {
 
 /* Página POST */
 .post {
-    position: fixed;
+    /* position: fixed; */
     font-style: normal;
     margin-top: 50px;
 }
