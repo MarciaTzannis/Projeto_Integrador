@@ -23,16 +23,16 @@
     <nav class="navbar navbar-fixed-top">
     <div class="container-fluid">
         <div class="navbar-header">
-            <a href="#home"><img src="img/Nome.png" title="MatchSports" /></a>
+            <a href="/#home"><img src="img/Nome.png" title="MatchSports" /></a>
 
         </div>
         <button class="menu-mobile" title="menu" data-toggle="collapse" data-target=".menu-principal">&#9776;</button>
         <div class="collapse navbar-collapse menu-principal" id="myNavbar">
             <ul class="nav navbar-nav">
                 <li class="active">
-                <li><a href="#saiba-mais">Saiba Mais</a></li>
-                <li><a href="#modalidades">Modalidades</a></li>
-                <li><a href="#fale-conosco">Fale Conosco</a></li>
+                <li><a href="/#saiba-mais">Saiba Mais</a></li>
+                <li><a href="/#modalidades">Modalidades</a></li>
+                <li><a href="/#fale-conosco">Fale Conosco</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="/cadastroUsuario"><span class="glyphicon glyphicon-user"></span>Sign up</a></li>
@@ -94,9 +94,10 @@
 </footer>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 <script src="js/owl.carousel.min.js"></script>
+
+
 <script>
 $('.owl-carousel').owlCarousel({
  loop: true,
@@ -116,6 +117,7 @@ $('.owl-carousel').owlCarousel({
 })
 </script>
 <script src="js/main.js"></script>
+
 </body>
 
 </html>

@@ -25,12 +25,19 @@
 
                         <div class="form-group col-md-6">
                             <label for="inputPassword4">Senha</label>
+                            <div class="input-group">
                             <input type="password" class="form-control" id="inputPassword4" placeholder="Senha">
+                            <span class="input-group-btn">
+                                <button class="btn btn-default toggle-password" type="button">
+                                <span class="glyphicon glyphicon-eye-open field-icon" aria-hidden="true"></span>
+                                </button>
+                            </span>
+                            </div>
                         </div>
 
                         <div class="form-group col-md-6">
                             <label for="inputPassword4">Confirmar Senha</label>
-                            <input type="password" class="form-control" id="inputPassword4" placeholder="Senha">
+                            <input id="password-field-confirm" type="password" class="form-control" name="password" value="secret">
                         </div>
 
                         <div class="form-group col-md-12">
@@ -252,5 +259,6 @@
 
     </form>
 </div>
+
 
 @endsection
