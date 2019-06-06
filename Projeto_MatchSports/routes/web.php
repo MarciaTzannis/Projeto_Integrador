@@ -11,7 +11,7 @@
 |
 */
 
-Route::get('/','HomeController@exibirHome');
+Route::get('/','PaginaInicialController@exibirPaginaInicial');
 
 Route::get('/cadastroUsuario','CadastroUsuarioController@exibirCadastroUsuario');
 
@@ -20,3 +20,10 @@ Route::get('/feed','FeedController@exibirFeed');
 Route::get('/cadastroEvento','CadastroEventoController@exibirCadastroEvento');
 
 Route::get('/post','PostController@exibirPost');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('auth/{provider}', 'Auth\LoginController@redirectToProvider');
+Route::get('auth/{provider}/callback', 'Auth\LoginController@handleProviderCallback');
+

@@ -3,18 +3,18 @@ USE matchSports;
 
 CREATE TABLE usuario(
 id_usuario INT NOT NULL PRIMARY KEY UNIQUE auto_increment,
-nome VARCHAR(1000) NOT NULL,
-email VARCHAR(1000) NOT NULL UNIQUE,
-senha VARCHAR(1000) NOT NULL,
+nome VARCHAR(200) NOT NULL,
+email VARCHAR(200) NOT NULL UNIQUE,
+senha VARCHAR(300) NOT NULL,
 foto VARCHAR(1000)
 );
 
 CREATE TABLE evento(
 id_evento INT NOT NULL PRIMARY KEY UNIQUE auto_increment,
-nome VARCHAR(1000) NOT NULL,
+nome VARCHAR(300) NOT NULL,
 descricao VARCHAR(1000) NOT NULL,
 foto VARCHAR(1000) NOT NULL,
-local VARCHAR(1000) NOT NULL,
+local VARCHAR(500) NOT NULL,
 data_hora datetime,
 usuario_fk INT,
 modalidade_fk INT
@@ -22,7 +22,7 @@ modalidade_fk INT
 
 CREATE TABLE modalidade(
 id_modalidade INT NOT NULL PRIMARY KEY UNIQUE auto_increment,
-nome VARCHAR (1000) NOT NULL,
+nome VARCHAR (100) NOT NULL,
 logotipo VARCHAR(1000) NOT NULL
 );
 
@@ -57,6 +57,3 @@ ADD FOREIGN KEY (usuario_fk) REFERENCES usuario(id_usuario);
 
 ALTER TABLE usuario_evento
 ADD FOREIGN KEY (evento_fk) REFERENCES evento(id_evento);
-
-
-
