@@ -4,10 +4,21 @@
 
 
 <div class="container" id="wrap">
-    <form id="formulario">
+@if (count($errors) > 0)
+<div class="alert alert-danger">
+<ul>
+@foreach ($errors->all() as $error)
+<li>{{ $error}}</li>
+@endforeach
+</ul>
+@endif
+</div>
+  
+    
         <div class="row">
             <div class="col-md-6 col-md-offset-3">
-                <form action="r" method="post" accept-charset="utf-8" class="form" role="form">
+                <form method="POST" action="{{ route('register') }}" accept-charset="utf-8" class="form" role="form">
+                @csrf
                     <legend><b>Cadastre-se</b></legend>
                     <h4><em>Match Sports, o melhor jeito de encontrar seu parceiro.</em></h4>
 
@@ -15,18 +26,18 @@
 
                         <div class="form-group col-md-12">
                             <label for="name">Nome Completo</label>
-                            <input type="text" class="form-control" id="name" placeholder="name">
+                            <input type="text"  name="name" class="form-control" id="name" placeholder="name">
                         </div>
 
                         <div class="form-group col-md-12">
                             <label for="inputEmail4">Email</label>
-                            <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                            <input type="email"  name="email" class="form-control" id="inputEmail4" placeholder="Email">
                         </div>
 
                         <div class="form-group col-md-6">
                             <label for="inputPassword4">Senha</label>
                             <div class="input-group">
-                            <input type="password" class="form-control" id="inputPassword4" placeholder="Senha">
+                            <input type="password"  name="password" class="form-control" id="inputPassword4" placeholder="Senha">
                             <span class="input-group-btn">
                                 <button class="btn btn-default toggle-password" type="button">
                                 <span class="glyphicon glyphicon-eye-close field-icon" aria-hidden="true"></span>
@@ -37,22 +48,22 @@
 
                         <div class="form-group col-md-6">
                             <label for="inputPassword4">Confirmar Senha</label>
-                            <input id="password-field-confirm" type="password" class="form-control" name="password" value="secret">
+                            <input id="password-field-confirm" type="password" class="form-control" name="password_confirmation" value="secret">
                         </div>
 
                         <div class="form-group col-md-12">
                             <label for="inputAddress">Endereço</label>
-                            <input type="text" class="form-control" id="inputAddress" placeholder="Avenida/Rua">
+                            <input type="text" name="endereco" class="form-control" id="inputAddress" placeholder="Avenida/Rua">
                         </div>
 
                         <div class="form-group col-md-5">
                             <label for="inputCity">Cidade</label>
-                            <input type="text" class="form-control" id="inputCity">
+                            <input type="text" name="cidade" class="form-control" id="inputCity">
                         </div>
 
                         <div class="form-group col-md-2">
                             <label for="inputCEP">CEP</label>
-                            <input type="text" class="form-control" id="inputCEP">
+                            <input type="text" name="cep" class="form-control" id="inputCEP">
                         </div>
 
                         <div class="form-group col-md-5">
@@ -94,14 +105,14 @@
                         <label>Data de Nascimento</label>
                         <div class="row">
                             <div class="form-group col-md-4" >
-                            <input type="text" id="datepicker" class="form-control"></<input>
+                            <input type="text" name="data_nascimento" id="datepicker" class="form-control"></<input>
                                 
                             </div>
                             <label>Sexo : </label> <label class="radio-inline">
-                                <input type="radio" name="gender" value="M" id=male /> Male
+                                <input type="radio" name="sexo" value="M" id=male /> Male
                             </label>
                             <label class="radio-inline">
-                                <input type="radio" name="gender" value="F" id=female /> Female
+                                <input type="radio" name="sexo" value="F" id=female /> Female
                             </label>
                         </div>
                     </div>
@@ -133,7 +144,7 @@
             </div>
         </div>
 
-    </form>
+    
 </div>
 
 
