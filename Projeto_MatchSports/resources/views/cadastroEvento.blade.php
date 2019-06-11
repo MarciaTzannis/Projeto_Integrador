@@ -36,8 +36,8 @@
 
 
                         <div class="form-group col-md-6">
-                            <label for="inputEstado">Estado</label>
-                            <select name="estado">
+                            <label for="inputEstado" >Estado</label>
+                            <select name="estado" class="form-control">
                                 <option value="estado">Selecione o Estado</option>
                                 <option value="ac">Acre</option>
                                 <option value="al">Alagoas</option>
@@ -73,50 +73,19 @@
                     <div class="form-group col-md-12">
                         <label>Data do Evento</label>
                         <div class="row">
-                            <div class="form-group col-md-4">
-                                <select name="day" class="form-control input-lg">
-                                  <?php for ($i=1; $i < 32 ; $i++):?>
-                                  <option value="<?= $i?>"><?= $i?></option>
-                                  <?php endfor?>
-                                </select>
-                            </div>
 
-
-                            <div class="form-group col-md-4">
-                                <select name="month" class="form-control input-lg">
-                                    <option value="01">Jan</option>
-                                    <option value="02">Fev</option>
-                                    <option value="03">Mar</option>
-                                    <option value="04">Abr</option>
-                                    <option value="05">Mai</option>
-                                    <option value="06">Jun</option>
-                                    <option value="07">Jul</option>
-                                    <option value="08">Ago</option>
-                                    <option value="09">Set</option>
-                                    <option value="10">Out</option>
-                                    <option value="11">Nov</option>
-                                    <option value="12">Dez </option>
-                                </select>
-                            </div>
-
-                            <div class="form-group col-md-4">
-                                <select name="year" class="form-control input-lg">
-
-                                  <?php for ($i=2019; $i < 2026 ; $i++):?>
-                                  <option value="<?= $i?>"><?= $i?></option>
-                                  <?php endfor?>
-
-
-                                </select>
-                            </div>
+                        <div class="form-group col-md-4" >
+                            <input type="text" id="datepicker" class="form-control"></<input>
+                                
                         </div>
+                                <div class="form-group col-md-6">
+                                    <input type="time" name="Horário" class="form-control">
+                                </div>
+                    </div>
 
                         <div class="form-group col-md-12">
                             <label>Horário do Evento</label>
                             <div class="row">
-                                <div class="form-group col-md-6">
-                                    <input type="time" name="Horário" class="form-control">
-                                </div>
 
 
                                 <div class="form-group col-md-12">

@@ -433,7 +433,8 @@ footer a:hover {
 }
 
 #estado {
-    height: 6vh;
+    border: 1px solid #ccc;
+    height: 34px;
 }
 
 

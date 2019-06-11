@@ -93,49 +93,20 @@
                     <div class="form-group col-md-12">
                         <label>Data de Nascimento</label>
                         <div class="row">
-                            <div class="form-group col-md-4">
-                                <select name="day" class="form-control input-lg">
-                                    <?php for ($i=1; $i < 32 ; $i++):?>
-                                    <option value="<?= $i?>"><?= $i?></option>
-                                    <?php endfor?>
-                                </select>
+                            <div class="form-group col-md-4" >
+                            <input type="text" id="datepicker" class="form-control"></<input>
+                                
                             </div>
-
-
-                            <div class="form-group col-md-4">
-                                <select name="month" class="form-control input-lg">
-                                    <option value="01">Jan</option>
-                                    <option value="02">Fev</option>
-                                    <option value="03">Mar</option>
-                                    <option value="04">Abr</option>
-                                    <option value="05">Mai</option>
-                                    <option value="06">Jun</option>
-                                    <option value="07">Jul</option>
-                                    <option value="08">Ago</option>
-                                    <option value="09">Set</option>
-                                    <option value="10">Out</option>
-                                    <option value="11">Nov</option>
-                                    <option value="12">Dez </option>
-                                </select>
-                            </div>
-
-                            <div class="form-group col-md-4">
-                                <select name="year" class="form-control input-lg">
-                                  <?php for ($i=1935; $i < 2014 ; $i++):?>
-                                  <option value="<?= $i?>"><?= $i?></option>
-                                  <?php endfor?>
-
-                                </select>
-                            </div>
-                        </div>
-
-                        <div class="form-group col-md-12">
                             <label>Sexo : </label> <label class="radio-inline">
                                 <input type="radio" name="gender" value="M" id=male /> Male
                             </label>
                             <label class="radio-inline">
                                 <input type="radio" name="gender" value="F" id=female /> Female
                             </label>
+                        </div>
+                    </div>
+
+                        <div class="form-group col-md-12">
                         </div>
 
                         <div class="form-group col-md-12">
@@ -156,7 +127,7 @@
 
                         <button class="btn btn-lg btn-primary btn-block signup-btn" type="submit">
                             Criar minha conta</button>
-                    </div>
+                        </div>
                 </form>
 
             </div>
