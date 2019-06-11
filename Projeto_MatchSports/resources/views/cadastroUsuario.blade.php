@@ -29,7 +29,7 @@
                             <input type="password" class="form-control" id="inputPassword4" placeholder="Senha">
                             <span class="input-group-btn">
                                 <button class="btn btn-default toggle-password" type="button">
-                                <span class="glyphicon glyphicon-eye-open field-icon" aria-hidden="true"></span>
+                                <span class="glyphicon glyphicon-eye-close field-icon" aria-hidden="true"></span>
                                 </button>
                             </span>
                             </div>
@@ -57,7 +57,7 @@
 
                         <div class="form-group col-md-5">
                             <label for="inputEstado">Estado</label>
-                            <select name="estado">
+                            <select name="estado" id="estado">
                                 <option value="estado">Selecione o Estado</option>
                                 <option value="ac">Acre</option>
                                 <option value="al">Alagoas</option>
@@ -141,17 +141,16 @@
                         <div class="form-group col-md-12">
                             <div class="form-check">
                                 <input class="form-check-input" type="checkbox" id="gridCheck">
-                                <label class="form-check-label" for="gridCheck">Termos e Condições
-                                </label>
+                                <label class="form-check-label" for="gridCheck">Eu aceito os termos e condições.</label>
                             </div>
                         </div>
 
                         <div class="form-group col-md-6">
-                        <a href="{{ url('/auth/facebook')}}" class="btn btn-fb btn-block"><i class="fa fa-facebook"></i> Facebook</a>
+                        <a href="{{ url('/auth/facebook')}}" class="btn btn-fb btn-block"><i class="fa fa-facebook"></i>Cadastre com Facebook</a>
                         </div>
 
                         <div class="form-group col-md-6">
-                        <a href="{{ url('/auth/google')}}" class="btn btn-tw btn-block"><i class="fa fa-google+"></i> Google+</a>
+                        <a href="{{ url('/auth/google')}}" class="btn btn-tw btn-block"><i class="fa fa-google+"></i>Cadastre com Google+</a>
 
                         </div>
 

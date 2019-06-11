@@ -157,9 +157,6 @@
 
         </ul>
     </div>
-    <div class="procura">
-        <input type="text" name="search" placeholder="Localize o bairro...">
-    </div>
 </div>
 
 <section class="sectionModalidades">
@@ -184,30 +181,10 @@
             <div class="panel-body no-padding">
                 <form role="form" class="form-horizontal">
                     <div class="row-fluid">
-                        <div class="col-md-3 col-sm-12 col-xs-12 banner">
+                        <div class="col-md-7 col-sm-12 col-xs-12 banner">
                             <!-- Background image -->
                         </div>
-                        <div class="col-md-4 col-sm-6 col-xs-12 padding">
-                            <p class="lead">Rede Sociais</p>
-
-                            <div class="row">
-                                <div class="col-md-12 icones">
-                                    <a href="https://www.google.com.br/"> <img src="img/icones/facebook.svg"
-                                            alt="facebook"></a>
-
-                                    <a href="https://www.google.com.br/"><img src="img/icones/instagram.svg"
-                                            alt="instagram"></a>
-
-                                    <a href="https://www.google.com.br/"><img src="img/icones/twitter.svg"
-                                            alt="twitter"></a>
-                                </div>
-
-                            </div>
-
-
-
-
-                        </div>
+                       
                     </div>
 
                     <div class="col-md-5 col-sm-12 col-xs-12  padding border-left">

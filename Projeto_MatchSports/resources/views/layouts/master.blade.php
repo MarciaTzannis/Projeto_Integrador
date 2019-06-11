@@ -68,9 +68,6 @@
                                         <div class="form-group">
                                             <a type="submit" class="btn btn-primary btn-block">Entrar</a>
                                         </div>
-                                        <div class="form-group">
-                                            <a type="submit" class="btn btn-primary btn-danger btn-block">Logout</a>
-                                        </div>
                                         <div class="checkbox">
                                             <label>
                                                 <input type="checkbox"> Mantenha-me Logado
@@ -126,10 +123,10 @@
 @yield('content')
 
 
-
-<footer class="text-center">
+<footer id="rodapé" class="text-center">
     <p>Copyright &copy; MatchSports</p>
 </footer>
+
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>

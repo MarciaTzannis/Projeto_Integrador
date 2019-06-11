@@ -9,7 +9,7 @@ html {
 }
 
 body {
-    background-color: #fff;
+    background-color: #FAFAFA;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -32,13 +32,15 @@ body {
 .nav>li>a {
     color: rgba(255, 255, 255, 0.6);
 }
+
 .nav-link {
     white-space: nowrap;
     margin-right: 25px;
 }
+
 .nav>li>a:focus,
 .nav>li>a:hover {
-  
+
     background: transparent;
 }
 
@@ -52,9 +54,10 @@ body {
 }
 
 .navbar-header .foto-login {
-  width: 30px;
-  border-radius: 30px;
+    width: 30px;
+    border-radius: 30px;
 }
+
 .carousel-inner>.item>img {
     height: 100vh;
 }
@@ -254,6 +257,7 @@ body {
 }
 
 
+
 input,
 select {
     margin-bottom: 20px;
@@ -287,7 +291,7 @@ select {
 }
 
 .banner {
-    background-image: url("../img/grupo.jpg");
+    background-image: url("../img/grupo2.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -402,19 +406,19 @@ footer a:hover {
     background-color: #59b5fa;
 }
 
-.btn-logout{
-  padding: 0px;
-  margin: 10px auto;
+.btn-logout {
+    padding: 0px;
+    margin: 10px auto;
 }
 
-.menu-logado{
-  list-style: none;
+.menu-logado {
+    list-style: none;
 }
 
-.menu-logado li{
-  margin:0;
-  color: rgba(255, 255, 255, 0.6);
-  text-shadow: 0 1px 0 rgba(255,255,255,.25);
+.menu-logado li {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.6);
+    text-shadow: 0 1px 0 rgba(255, 255, 255, .25);
 }
 
 
@@ -428,6 +432,9 @@ footer a:hover {
     margin-top: 60px;
 }
 
+#estado {
+    height: 6vh;
+}
 
 
 /* Página POST */

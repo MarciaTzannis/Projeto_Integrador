@@ -28,13 +28,15 @@
                     </div>
 
                     <div class="descricao-feed">
-                      <p class="card-text"><b>Local do evento:</b> Parque Ibirapuera.</p>
+                        <p class="card-text"><b>Região:</b> Zona Sul</p>
 
-                      <p class="card-text"><b>Data e hora:</b>  Todas as quartas as 18:30.</p>
+                        <p class="card-text"><b>Local do evento:</b> Parque Ibirapuera.</p>
 
-                      <p class="card-text"><b>Descrição do evento:</b>Uma corridinha marota para queimar as cervejinhas do fim de semana.</p>
+                        <p class="card-text"><b>Data e hora:</b>  Todas as quartas as 18:30.</p>
 
-                      <a href="/post" class="btn btn-primary">Entre no evento &rarr;</a>
+                        <p class="card-text"><b>Descrição do evento:</b>Uma corridinha marota para queimar as cervejinhas do fim de semana.</p>
+
+                        <a href="/post" class="btn btn-primary">Entre no evento &rarr;</a>
                     </div>
 
                 </div>
@@ -53,13 +55,15 @@
                         </div>
 
                         <div class="descricao-feed">
-                          <p class="card-text"><b>Local do evento:</b> Cidade Universitária.</p>
+                            <p class="card-text"><b>Região:</b> Zona Sul</p>
 
-                          <p class="card-text"><b>Data e hora:</b>  Domingo as 8:00.</p>
+                            <p class="card-text"><b>Local do evento:</b> Cidade Universitária.</p>
 
-                          <p class="card-text"><b>Descrição do evento:</b>Treino para maratonas. Se você quer correr até acabar a sola do tênis?? Aqui é o lugar!!</p>
+                            <p class="card-text"><b>Data e hora:</b>  Domingo as 8:00.</p>
 
-                          <a href="/post" class="btn btn-primary">Entre no evento &rarr;</a>
+                            <p class="card-text"><b>Descrição do evento:</b>Treino para maratonas. Se você quer correr até acabar a sola do tênis?? Aqui é o lugar!!</p>
+
+                            <a href="/post" class="btn btn-primary">Entre no evento &rarr;</a>
                         </div>
 
                     </div>
@@ -78,13 +82,15 @@
                             </div>
 
                             <div class="descricao-feed">
-                              <p class="card-text"><b>Local do evento:</b> Estadio Olimpico.</p>
+                                <p class="card-text"><b>Região:</b> Zona Sul</p>
 
-                              <p class="card-text"><b>Data e hora:</b>  Sabado as 9:00.</p>
+                                <p class="card-text"><b>Local do evento:</b> Estadio Olimpico.</p>
 
-                              <p class="card-text"><b>Descrição do evento:</b>Corrida para velocistas. Vamos treinar para deixar o Bolt comendo poeira!!</p>
+                                <p class="card-text"><b>Data e hora:</b>  Sabado as 9:00.</p>
 
-                              <a href="/post" class="btn btn-primary">Entre no evento &rarr;</a>
+                                <p class="card-text"><b>Descrição do evento:</b>Corrida para velocistas. Vamos treinar para deixar o Bolt comendo poeira!!</p>
+
+                                <a href="/post" class="btn btn-primary">Entre no evento &rarr;</a>
                             </div>
 
                         </div>
@@ -119,41 +125,6 @@
                             <span class="input-group-btn">
                                 <button class="btn btn-secondary" type="button">Match Sports!</button>
                             </span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Categories Widget -->
-                <div class="card my-4">
-                    <h5 class="card-header">Navegue pelo Site</h5>
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <ul class="list-unstyled mb-0">
-                                    <li>
-                                        <a href="index.php#home">Home</a>
-                                    </li>
-                                    <li>
-                                        <a href="index.php#saiba-mais">Saiba Mais</a>
-                                    </li>
-                                    <li>
-                                        <a href="index.php#modalidades">Modalidades</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="col-lg-6">
-                                <ul class="list-unstyled mb-0">
-                                    <li>
-                                        <a href="index.php#fale-conosco">Fale Conosco</a>
-                                    </li>
-                                    <li>
-                                        <a href="cadastroFinal.php">Cadastro</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Login</a>
-                                    </li>
-                                </ul>
-                            </div>
                         </div>
                     </div>
                 </div>
