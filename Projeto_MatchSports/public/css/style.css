@@ -437,7 +437,34 @@ footer a:hover {
     height: 34px;
 }
 
+.alert-danger {
+    margin-top: 60px;
+}
 
+
+
+/* Pagina Login */
+
+#paginaLogin{
+    position: relative;
+    margin-top:80px;
+}
+
+#paginaLogin .card-login{
+    border-top-left-radius: 100px;
+    border-top: 5px solid #25a1dd;
+    border-bottom-right-radius: 100px;
+    border-bottom: 5px solid #a4cb5b;
+    padding: 35px;
+    width: 650px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-left: -35px;
+}
+
+#paginaLogin .bottom{
+        margin-top: 20px;
+    }
 /* Página POST */
 .post {
     /* position: fixed; */

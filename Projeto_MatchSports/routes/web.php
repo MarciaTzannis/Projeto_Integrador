@@ -16,11 +16,11 @@ Route::get('/','PaginaInicialController@exibirPaginaInicial');
 Route::get('/cadastroUsuario','CadastroUsuarioController@exibirCadastroUsuario');
 
 
-Route::get('/feed','FeedController@exibirFeed')->middleware(['auth']);
+Route::get('/feed','FeedController@exibirFeed');
 
 Route::get('/cadastroEvento','CadastroEventoController@exibirCadastroEvento')->middleware(['auth']);
 
-Route::get('/post','PostController@exibirPost');
+Route::get('/post','PostController@exibirPost')->middleware(['auth']);
 // routes ele já considera o metodo Post então é necessário criar o route::post para cadastrar usuario
 Auth::routes();
 

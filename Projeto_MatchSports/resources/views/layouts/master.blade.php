@@ -87,7 +87,7 @@
     @else
                         <li class="nav-item dropdown">
                           <div class="navbar-header">
-                            <img class="foto-login" src="{{ auth()->user()->photo }}" alt="foto-login">
+                            <img class="foto-login" src="{{ auth()->user()->photo }}" alt="">
 
                           </div>
                             <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
@@ -126,7 +126,9 @@
 
 
 <footer id="rodapé" class="text-center">
-    <p>Copyright &copy; MatchSports</p>
+        <div class="d-flex flex-row">
+            <p>Copyright &copy; MatchSports</p>
+        </div>
 </footer>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
