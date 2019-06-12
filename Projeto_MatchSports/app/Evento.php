@@ -17,21 +17,30 @@ class Evento extends Model
         return $this->descricao;
     }
 
-    public function getFoto(){
-        return $this->foto;
+    public function getRegiao(){
+        return $this->regiao;
     }
 
     public function getLocal(){
         return $this->local;
     }
 
-    public function getData_Hora(){
-        return $this->data_hora;
+    public function getCidadeUf(){
+        return $this->cidade_uf;
     }
 
-    public function getSlug(){
+    public function getData(){
+        return $this->data;
+    }
+
+    public function getHora(){
+        return $this->hora;
+    }
+
+    /* public function getSlug(){
         return $this->slug;
     }
+    */
 
     public function mensagem() {
         return $this->hasMany(Mensagem::Class, 'evento_fk', 'id_evento');
@@ -42,4 +51,3 @@ class Evento extends Model
     }
 }
 
-}

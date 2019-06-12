@@ -2,6 +2,7 @@
 
 @section('content')
 
+<!-- Vericação de erros -->
 @if (count($errors) > 0)
 <div class="alert alert-danger">
     <ul>
@@ -9,14 +10,15 @@
         <li>{{ $error}}</li>
         @endforeach
     </ul>
-    @endif
+ @endif
 </div>
 
 <div class="container" id="wrap">
     <div id="formulario">
         <div class="row">
             <div class="col-md-6 col-md-offset-3">
-                <form action="r" method="post" accept-charset="utf-8" class="form" role="form">
+                <form action="/feed" method="post" accept-charset="utf-8" class="form" role="form">
+                @csrf
                     <legend><b>Crie seu Evento!</b></legend>
                     <h4><em>Match Sports, o melhor jeito de encontrar seu parceiro.</em></h4>
 

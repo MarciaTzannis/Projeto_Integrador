@@ -47,6 +47,7 @@ class CadastroUsuarioController extends Controller
             'data_nascimento'=>'max:11',
             'sexo'=>'max:10'
         ]);
+        
         // criando novo usuario
         $usuario = new User;
         
