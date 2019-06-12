@@ -8,6 +8,11 @@ class Evento extends Model
 {
     protected $table = 'evento';
     protected $primaryKey = 'id_evento';
+    public $timestamps = false;
+
+    protected $fillable = [
+        'nome', 'descricao', 'regiao', 'local', 'cidade_uf', 'data', 'hora'
+    ];
 
     public function getNome(){
         return $this->nome;

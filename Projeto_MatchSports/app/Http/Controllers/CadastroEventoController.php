@@ -36,19 +36,19 @@ class CadastroEventoController extends Controller
     public function novoEvento(Request $request)
     {
         $request->validate([
-            'name'=> 'max:100',
-            'descricao'=> 'max:1000',
-            'regiao'=> 'max:45',
-            'local'=> 'max:45',
-            'cidade_uf'=> 'max:45',
-            'data'=>'max:11',
-            'hora'=>'max:8'
+            'nome'=> 'required|max:100',
+            'descricao'=> 'required|max:1000',
+            'regiao'=> 'required|max:45',
+            'local'=> 'required|max:45',
+            'cidade_uf'=> 'required|max:45',
+            'data'=>'required|max:11',
+            'hora'=>'required|max:8'
         ]);
-
+        
         // criando novo evento
         $evento = new Evento;
 
-        $evento->name = $request->input('nome');
+        $evento->nome = $request->input('nome');
         $evento->descricao = $request->input('descricao');
         $evento->regiao = $request->input('regiao');
         $evento->local = $request->input('local');
