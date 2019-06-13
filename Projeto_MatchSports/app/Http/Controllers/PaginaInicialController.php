@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Modalidades;
 
 class PaginaInicialController extends Controller
 {
@@ -17,6 +18,11 @@ class PaginaInicialController extends Controller
 
     }
 
+    public function exibirModalidades()
+    {
+        $modalidades = Modalidades::all();
+        return view('paginaInicial')->with('modalidades',$modalidades);
+    }
     /**
      * Show the form for creating a new resource.
      *

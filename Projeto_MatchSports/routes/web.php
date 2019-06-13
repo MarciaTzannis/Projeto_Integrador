@@ -12,6 +12,7 @@
 */
 
 Route::get('/','PaginaInicialController@exibirPaginaInicial');
+Route::get('/','PaginaInicialController@exibirModalidades');
 
 Route::get('/cadastroUsuario','CadastroUsuarioController@exibirCadastroUsuario');
 
