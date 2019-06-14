@@ -18,6 +18,7 @@ Route::get('/cadastroUsuario','CadastroUsuarioController@exibirCadastroUsuario')
 
 
 Route::get('/feed','FeedController@exibirFeed');
+Route::get('/feed/{slug}','FeedController@exibirDetalhes');
 
 Route::get('/cadastroEvento','CadastroEventoController@exibirCadastroEvento')->middleware(['auth']);
 Route::post('/feed', 'CadastroEventoController@novoEvento')->middleware(['auth']);
@@ -31,4 +32,3 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('auth/{provider}', 'Auth\LoginController@redirectToProvider');
 Route::get('auth/{provider}/callback', 'Auth\LoginController@handleProviderCallback');
-

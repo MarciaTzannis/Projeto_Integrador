@@ -8,6 +8,9 @@ class Modalidades extends Model
 {
     protected $table = 'modalidades';
     protected $primaryKey = 'id_modalidade';
+    protected $fillable = [
+        'nome','logotipo','slug'
+    ];
 
     public function getNome(){
         return $this->nome;

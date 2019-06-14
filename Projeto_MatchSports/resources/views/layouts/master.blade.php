@@ -16,8 +16,8 @@
         <link rel="stylesheet" href="css/owl.theme.default.min.css">
         <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
         <link rel="stylesheet" href="/resources/demos/style.css">   
-        <link rel="stylesheet" href="css/style.css">
-        <link href="css/feed/blog-home.css" rel="stylesheet">
+        <link rel="stylesheet" href="{{ url('css/style.css') }}">
+        <link href="{{ url('css/feed/blog-home.css') }}" rel="stylesheet">
 
     </head>
 
@@ -25,7 +25,7 @@
     <nav class="navbar navbar-fixed-top">
     <div class="container-fluid">
         <div class="navbar-header">
-            <a href="/#home"><img src="img/Nome.png" title="MatchSports" /></a>
+            <a href="/#home"><img src="{{ url('img/Nome.png') }}" title="MatchSports" /></a>
 
         </div>
         <button class="menu-mobile" title="menu" data-toggle="collapse" data-target=".menu-principal">&#9776;</button>

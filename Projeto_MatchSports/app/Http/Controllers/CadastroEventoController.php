@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Evento; // para chamar o modal evento.php
-
+use App\Modalidades;
 class CadastroEventoController extends Controller
 {
     /**
@@ -14,7 +14,9 @@ class CadastroEventoController extends Controller
      */
     public function exibirCadastroEvento()
     {
-        return view('cadastroEvento');
+
+        $modalidades = Modalidades::all();
+        return view('cadastroEvento')->with('modalidades',$modalidades);
     }
 
     /**

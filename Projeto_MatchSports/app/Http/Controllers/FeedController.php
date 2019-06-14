@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Modalidades;
 
 class feedController extends Controller
 {
@@ -15,6 +16,18 @@ class feedController extends Controller
     {
         return view('feed');
     }
+
+    public function exibirModalidades()
+    {
+        $modalidades = Modalidades::all();
+        return view('feed')->with('modalidades',$modalidades);
+    }
+
+    public function exibirDetalhes($slug){
+     $modalidade = Modalidades::where('slug', '=',$slug)->get(); // find() procura obrigatoriamente pelo id PK
+     return view('feed-modalidade')
+     ->with('modalidade',$modalidade[0]);
+ }
 
     /**
      * Show the form for creating a new resource.

@@ -26,24 +26,24 @@
 
                         <div class="form-group col-md-12">
                             <label for="name">Nome do Evento</label>
-                            <input type="text" class="form-control" id="name" placeholder="Name">
+                            <input type="text" name="nome" class="form-control" id="name" placeholder="Name">
                         </div>
 
 
                         <div class="form-group col-md-12">
                             <label for="Descrição">Descreva um pouco mais sobre seu evento</label>
-                            <input type="text" class="form-control" id="descrição" placeholder="Detalhes do Evento">
+                            <input type="text" name="descricao" class="form-control" id="descrição" placeholder="Detalhes do Evento">
                         </div>
 
                         <div class="form-group col-md-12">
                             <label for="inputAddress">Local do evento.</label>
-                            <input type="text" class="form-control" id="inputAddress"
+                            <input type="text" name="local" class="form-control" id="inputAddress"
                                 placeholder="Ex: Parque, Praça, Clube, etc...">
                         </div>
 
                         <div class="form-group col-md-12">
                             <label for="inputCity">Cidade-UF</label>
-                            <input type="text" class="form-control" id="inputCity">
+                            <input type="text" name="cidade_uf" class="form-control" id="inputCity">
                         </div>
 
 
@@ -62,14 +62,14 @@
                         <div class="form-group col-md-6">
                                 
                                 <label>Data</label>
-                                <input type="text" id="datepicker" class="form-control"></<input>
+                                <input type="text" name="data" id="datepicker" class="form-control"></<input>
                                 
                                 
                         </div>
                         <div class="form-group col-md-6">
                                 
                                 <label>Hora</label>
-                                <input type="text" id="datepicker" class="form-control"></<input>
+                                <input type="text" name="hora" id="datepicker" class="form-control"></<input>
                                 
                                 
                         </div>

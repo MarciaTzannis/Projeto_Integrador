@@ -127,7 +127,7 @@
         @foreach ( $modalidades as $modalidade )
             <li><a href="#">{{ $modalidade->nome }}</a></li>
         @endforeach
-         
+
         </ul>
     </div>
 </div>
@@ -159,7 +159,7 @@
                         <div class="col-md-7 col-sm-12 col-xs-12 banner">
                             <!-- Background image -->
                         </div>
-                       
+
                     </div>
 
                     <div class="col-md-5 col-sm-12 col-xs-12  padding border-left">

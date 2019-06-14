@@ -8,7 +8,7 @@ class Evento extends Model
 {
     protected $table = 'evento';
     protected $primaryKey = 'id_evento';
-    public $timestamps = false;
+    // public $timestamps = true;
 
     protected $fillable = [
         'nome', 'descricao', 'regiao', 'local', 'cidade_uf', 'data', 'hora'

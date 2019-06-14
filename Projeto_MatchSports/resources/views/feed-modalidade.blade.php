@@ -6,14 +6,13 @@
 <div id="feed">
 <div class="container">
 
-
-    <div class="row">
+      <div class="row">
 
         <!-- Blog Entries Column -->
         <div class="col-md-8">
 
             <h1 class="my-4">Eventos
-                <small>Corrida</small>
+              <small>{{ $modalidade->nome }}</small>
             </h1>
 
             <a href="/cadastroEvento" class="btn btn-default btn-md">
@@ -25,7 +24,7 @@
                     <h2 class="card-title">Corrida marota</h2>
 
                     <div class="img-feed">
-                      <img class="card-img-top foto-post" src="img\logocorrida.png" alt="Card image cap">
+                      <img class="card-img-top foto-post" src="{{ url('img') . '/' . $modalidade->logotipo }}" alt="{{ $modalidade->logotipo }}">
                     </div>
 
                     <div class="descricao-feed">
@@ -52,7 +51,7 @@
                         <h2 class="card-title">Vamos maratonar!!</h2>
 
                         <div class="img-feed">
-                          <img class="card-img-top foto-post" src="img\logocorrida.png" alt="Card image cap">
+                          <img class="card-img-top foto-post" src="img\{{ $modalidade->logotipo }}" alt="{{ $modalidade->logotipo }}">
                         </div>
 
                         <div class="descricao-feed">
@@ -79,7 +78,7 @@
                             <h2 class="card-title">Só os Usain Bolt aqui!</h2>
 
                             <div class="img-feed">
-                              <img class="card-img-top foto-post" src="img\logocorrida.png" alt="Card image cap">
+                              <img class="card-img-top foto-post" src="img\{{ $modalidade->logotipo }}" alt="{{ $modalidade->logotipo }}">
                             </div>
 
                             <div class="descricao-feed">

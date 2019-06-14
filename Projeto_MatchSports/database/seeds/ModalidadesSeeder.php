@@ -12,8 +12,7 @@ class ModalidadesSeeder extends Seeder
      */
     public function run()
     {
-      Modalidades::truncate();
-
+      
       $modalidade   = new Modalidades;
       $modalidade->nome = 'Badminton';
       $modalidade->logotipo = 'logobadminton.png';
