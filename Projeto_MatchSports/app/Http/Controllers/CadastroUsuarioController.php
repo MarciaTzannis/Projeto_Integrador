@@ -37,16 +37,16 @@ class CadastroUsuarioController extends Controller
     public function novoUsuario(Request $request){
         //validando os dados informados pelo usuario
         $request->validate([
-            'name'=> 'required|max:100',
-            'email'=> 'required|max:100|unique:users',
-            'password'=> 'required|min:8|max:100',
-            'endereco'=> 'max:1000',
-            'cidade'=> 'max:45',
-            'cep'=>'numeric|max:9',
-            'estado'=>'max:22',
-            'data_nascimento'=>'max:11',
-            'sexo'=>'max:10'
-        ]);
+             'name'=> 'required|max:100',
+             'email'=> 'required|max:100|unique:users',
+             'password'=> 'required|min:8|max:100',
+             'endereco'=> 'max:1000',
+             'cidade'=> 'max:45',
+             'cep' => 'string|max:9',
+             'estado'=>'max:22',
+             'data_nascimento'=>'max:11',
+             'sexo'=>'max:10'
+         ]);
         
         // criando novo usuario
         $usuario = new User;

@@ -18,7 +18,7 @@ class AdicionarFotoEnderecoNascimentoSexoNaTabelaUsers extends Migration
             $table->string('endereco',1000)->nullable();
             $table->string('cidade',100)->nullable();
             $table->string('estado',100)->nullable();
-            $table->bigInteger('cep')->nullable();
+            $table->string('cep')->nullable();
             $table->date('data_nascimento')->nullable();
             $table->string('sexo',100)->nullable();
                    

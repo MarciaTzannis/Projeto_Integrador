@@ -29,6 +29,8 @@ Route::get('/post','PostController@exibirPost')->middleware(['auth']);
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/home','PaginaInicialController@exibirModalidades')->name('home');
+
 
 Route::get('auth/{provider}', 'Auth\LoginController@redirectToProvider');
 Route::get('auth/{provider}/callback', 'Auth\LoginController@handleProviderCallback');

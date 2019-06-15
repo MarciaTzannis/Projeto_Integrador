@@ -68,7 +68,7 @@
 
                     <div class="form-group col-md-2">
                         <label for="inputCEP">CEP</label>
-                        <input type="text" name="cep" class="form-control" id="inputCEP">
+                        <input type="text" name="cep" class="form-control" id="inputCEP" maxlength="8">
                     </div>
 
                     <div class="form-group col-md-5">
@@ -161,7 +161,7 @@
     $( "#datepicker" ).datepicker({
       changeMonth: true,
       changeYear: true,
-      dateFormat: 'dd/mm/yy',
+      dateFormat: 'dd-mm-yy',
         dayNames: ['Domingo','Segunda','Terça','Quarta','Quinta','Sexta','Sábado','Domingo'],
         dayNamesMin: ['D','S','T','Q','Q','S','S','D'],
         dayNamesShort: ['Dom','Seg','Ter','Qua','Qui','Sex','Sáb','Dom'],

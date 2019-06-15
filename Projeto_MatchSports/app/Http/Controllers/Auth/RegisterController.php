@@ -28,7 +28,7 @@ class RegisterController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/home';
+    protected $redirectTo = '/';
 
     /**
      * Create a new controller instance.
@@ -54,7 +54,6 @@ class RegisterController extends Controller
             'password' => ['required', 'string', 'min:8', 'confirmed'],
             'endereco'=> ['max:1000'],
             'cidade'=> ['max:45'],
-            'cep'=>['numeric'],
             'estado'=>['max:22'],
             'data_nascimento'=>['max:11'],
             'sexo'=>['max:10']
@@ -69,6 +68,8 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
+        $dataBr = str_replace("/", "-", $data['data_nascimento']);
+        $dataUsa = date("Y-m-d", strtotime($dataBr));
         return User::create([
             'name' => $data['name'],
             'email' => $data['email'],
@@ -77,7 +78,7 @@ class RegisterController extends Controller
             'cidade' => $data['cidade'],
             'cep' => $data['cep'],
             'estado' => $data['estado'],
-            'data_nascimento' => $data['data_nascimento'],
+            'data_nascimento' => $dataUsa,
             'sexo' => $data['sexo'],
         ]);
     }
