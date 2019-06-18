@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Modalidades;
+use App\Evento; // para chamar o modal evento.php
+
 
 class feedController extends Controller
 {
@@ -12,22 +14,59 @@ class feedController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function exibirFeed()
-    {
-        return view('feed');
-    }
+    // public function exibirFeed()
+    // {
+    //     return view('feed');
+    // }
+    //
+    // public function exibirEventos()
+    // {
+    //     $eventos = Eventos::all();
+    //     return view('feed-modalidade')->with('eventos',$eventos);
+    // }
 
-    public function exibirModalidades()
+    public function exibirDetalhes($slug)
     {
-        $modalidades = Modalidades::all();
-        return view('feed')->with('modalidades',$modalidades);
-    }
 
-    public function exibirDetalhes($slug){
      $modalidade = Modalidades::where('slug', '=',$slug)->get(); // find() procura obrigatoriamente pelo id PK
      return view('feed-modalidade')
      ->with('modalidade',$modalidade[0]);
+    }
+
+ public function salvarEvento(Request $request)
+ {
+     $request->validate([
+         'nome'=> 'required|max:100',
+         'descricao'=> 'required|max:1000',
+         'regiao'=> 'required|max:45',
+         'local'=> 'required|max:45',
+         'cidade_uf'=> 'required|max:45',
+         'data'=>'required|max:11',
+         'hora'=>'required|max:8',
+         'modalidade_fk'=>'required',
+         'user_id'=>'required'
+     ]);
+
+     // criando novo evento
+     $evento = new Evento;
+
+     $evento->nome = $request->input('nome');
+     $evento->descricao = $request->input('descricao');
+     $evento->regiao = $request->input('regiao');
+     $evento->local = $request->input('local');
+     $evento->cidade_uf = $request->input('cidade_uf');
+     $evento->data = $request->input('data');
+     $evento->hora = $request->input('hora');
+     $evento->modalidade_fk = $request->input('modalidade_fk');
+     $evento->user_id = $request->input('user_id');
+
+     $evento->save();
+
+     // return redirect()->withInput();
+     // $this->exibirDetalhes("capoeira");
+     return redirect()->action("FeedController@exibirDetalhes", ['slug'=>$request->slug]);
  }
+
 
     /**
      * Show the form for creating a new resource.

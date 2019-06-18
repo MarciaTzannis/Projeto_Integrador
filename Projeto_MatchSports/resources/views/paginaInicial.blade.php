@@ -119,13 +119,15 @@
 
 <div id="modalidades" class="container">
     <div class="dropdown menu-suspenso">
+      <h2>Modalidades</h2>
+      <h4>Encontre um grupo da sua modalidade favorita aqui!!</h4>
         <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"> Modalidades
             <span class="caret"></span></button>
         <ul class="dropdown-menu scrollDropdown">
 
 
         @foreach ( $modalidades as $modalidade )
-            <li><a href="#">{{ $modalidade->nome }}</a></li>
+            <li><a href="/feed/{{ $modalidade->slug }}">{{ $modalidade->nome }}</a></li>
         @endforeach
 
         </ul>
@@ -133,6 +135,7 @@
 </div>
 
 <section class="sectionModalidades">
+  <h4>Ou por aqui...</h4>
     <div class="owl-carousel owl-theme carrossel">
 
     @foreach ( $modalidades as $modalidade )

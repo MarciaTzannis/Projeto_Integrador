@@ -11,97 +11,51 @@
         <!-- Blog Entries Column -->
         <div class="col-md-8">
 
+          <?php $eventos = $modalidade->evento; ?>
+
+
+
             <h1 class="my-4">Eventos
               <small>{{ $modalidade->nome }}</small>
             </h1>
 
-            <a href="/cadastroEvento" class="btn btn-default btn-md">
+
+            <a href="/cadastroEvento/{{ $modalidade->id_modalidade }}" class="btn btn-default btn-md">
               <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Crie um novo evento
             </a>
             <!-- Blog Post -->
+            @foreach ($eventos as $evento)
+
+
             <div class="card mb-4 evento">
                 <div class="card-body">
-                    <h2 class="card-title">Corrida marota</h2>
+                    <h2 class="card-title">{{ $evento->nome }}</h2>
 
                     <div class="img-feed">
                       <img class="card-img-top foto-post" src="{{ url('img') . '/' . $modalidade->logotipo }}" alt="{{ $modalidade->logotipo }}">
                     </div>
 
                     <div class="descricao-feed">
-                        <p class="card-text"><b>Região:</b> Zona Sul</p>
+                        <p class="card-text"><b>Região:</b> {{ $evento->regiao }}</p>
 
-                        <p class="card-text"><b>Local do evento:</b> Parque Ibirapuera.</p>
+                        <p class="card-text"><b>Local do evento:</b> {{ $evento->local }}</p>
 
-                        <p class="card-text"><b>Data e hora:</b>  Todas as quartas as 18:30.</p>
+                        <p class="card-text"><b>Data e hora:</b>  {{ $evento->data }} às {{ $evento->hora }}</p>
 
-                        <p class="card-text"><b>Descrição do evento:</b>Uma corridinha marota para queimar as cervejinhas do fim de semana.</p>
+                        <p class="card-text"><b>Descrição do evento:</b>  {{ $evento->descricao }}</p>
 
                         <a href="/post" class="btn btn-primary">Entre no evento &rarr;</a>
                     </div>
 
                 </div>
                     <div class="card-footer text-muted">
-                        Postado em 17 de Maio 2017 por
+                        Postado em {{ $evento->created_at }} por
                         <a href="#">Douglas</a>
                     </div>
                 </div>
+                @endforeach
 
-                <div class="card mb-4 evento">
-                    <div class="card-body">
-                        <h2 class="card-title">Vamos maratonar!!</h2>
-
-                        <div class="img-feed">
-                          <img class="card-img-top foto-post" src="img\{{ $modalidade->logotipo }}" alt="{{ $modalidade->logotipo }}">
-                        </div>
-
-                        <div class="descricao-feed">
-                            <p class="card-text"><b>Região:</b> Zona Sul</p>
-
-                            <p class="card-text"><b>Local do evento:</b> Cidade Universitária.</p>
-
-                            <p class="card-text"><b>Data e hora:</b>  Domingo as 8:00.</p>
-
-                            <p class="card-text"><b>Descrição do evento:</b>Treino para maratonas. Se você quer correr até acabar a sola do tênis?? Aqui é o lugar!!</p>
-
-                            <a href="/post" class="btn btn-primary">Entre no evento &rarr;</a>
-                        </div>
-
-                    </div>
-                        <div class="card-footer text-muted">
-                            Postado em 17 de Maio 2017 por
-                            <a href="#">Douglas</a>
-                        </div>
-                    </div>
-
-                    <div class="card mb-4 evento">
-                        <div class="card-body">
-                            <h2 class="card-title">Só os Usain Bolt aqui!</h2>
-
-                            <div class="img-feed">
-                              <img class="card-img-top foto-post" src="img\{{ $modalidade->logotipo }}" alt="{{ $modalidade->logotipo }}">
-                            </div>
-
-                            <div class="descricao-feed">
-                                <p class="card-text"><b>Região:</b> Zona Sul</p>
-
-                                <p class="card-text"><b>Local do evento:</b> Estadio Olimpico.</p>
-
-                                <p class="card-text"><b>Data e hora:</b>  Sabado as 9:00.</p>
-
-                                <p class="card-text"><b>Descrição do evento:</b>Corrida para velocistas. Vamos treinar para deixar o Bolt comendo poeira!!</p>
-
-                                <a href="/post" class="btn btn-primary">Entre no evento &rarr;</a>
-                            </div>
-
-                        </div>
-                            <div class="card-footer text-muted">
-                                Postado em 17 de Maio 2017 por
-                                <a href="#">Douglas</a>
-                            </div>
-                        </div>
-
-
-                <!-- Pagination -->
+      <!-- Pagination -->
                 <ul class="pagination justify-content-center mb-4">
                     <li class="page-item">
                         <a class="page-link" href="#">&larr; Antigos</a>

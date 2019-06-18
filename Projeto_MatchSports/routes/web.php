@@ -17,11 +17,10 @@ Route::get('/','PaginaInicialController@exibirModalidades');
 Route::get('/cadastroUsuario','CadastroUsuarioController@exibirCadastroUsuario');
 
 
-Route::get('/feed','FeedController@exibirFeed');
 Route::get('/feed/{slug}','FeedController@exibirDetalhes');
+Route::post('/feed/{slug}', 'FeedController@salvarEvento')->middleware(['auth']);
 
-Route::get('/cadastroEvento','CadastroEventoController@exibirCadastroEvento')->middleware(['auth']);
-Route::post('/feed', 'CadastroEventoController@novoEvento')->middleware(['auth']);
+Route::get('/cadastroEvento/{id_modalidade}','CadastroEventoController@exibirCadastroEvento')->middleware(['auth']);
 
 Route::get('/post','PostController@exibirPost')->middleware(['auth']);
 

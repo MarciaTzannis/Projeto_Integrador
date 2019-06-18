@@ -15,7 +15,7 @@
         <link rel="stylesheet" href="css/owl.carousel.min.css">
         <link rel="stylesheet" href="css/owl.theme.default.min.css">
         <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-        <link rel="stylesheet" href="/resources/demos/style.css">   
+        <link rel="stylesheet" href="/resources/demos/style.css">
         <link rel="stylesheet" href="{{ url('css/style.css') }}">
         <link href="{{ url('css/feed/blog-home.css') }}" rel="stylesheet">
 
@@ -54,32 +54,76 @@
                                         <a href="{{ url('/auth/google')}}" class="btn btn-tw"><i class="fa fa-google+"></i> Google+</a>
                                     </div>
                                     ou
-                                    <form class="form" role="form" method="post" action="login" accept-charset="UTF-8"
+                                    <form method="POST" action="{{ route('login') }}" accept-charset="UTF-8"
                                         id="login-nav">
+                                        @csrf
+
                                         <div class="form-group">
-                                            <label class="sr-only" for="exampleInputEmail2">e-mail</label>
-                                            <input type="email" class="form-control" id="exampleInputEmail2"
-                                                placeholder="E-mail cadastrado" required>
+                                            <label for="email"
+                                                class="sr-only">{{ __('E-Mail Address') }}</label>
+                                                  e-mail
+                                            <div class="col-md-12">
+                                                <input id="email" type="email"
+                                                    class="form-control @error('email') is-invalid @enderror" name="email"
+                                                    value="{{ old('email') }}" required autocomplete="email" placeholder="E-mail cadastrado" autofocus>
+
+                                                @error('email')
+                                                <span class="invalid-feedback" role="alert">
+                                                    <strong>{{ $message }}</strong>
+                                                </span>
+                                                @enderror
+                                            </div>
                                         </div>
+
                                         <div class="form-group">
-                                            <label class="sr-only" for="exampleInputPassword2">senha</label>
-                                            <input type="password" class="form-control" id="exampleInputPassword2"
-                                                placeholder="Senha" required>
-                                            <div class="help-block text-right"><a href="">Esqueceu sua senha?</a></div>
+                                            <label for="password"
+                                                class="sr-only">{{ __('Password') }}</label>
+
+                                            <div class="col-md-12">
+                                                <input id="password" type="password"
+                                                    class="form-control @error('password') is-invalid @enderror" name="password"
+                                                    required autocomplete="current-password">
+
+                                                @error('password')
+                                                <span class="invalid-feedback" role="alert">
+                                                    <strong>{{ $message }}</strong>
+                                                </span>
+                                                @enderror
+                                            </div>
                                         </div>
-                                        <div class="form-group">
-                                            <a type="submit" class="btn btn-primary btn-block">Entrar</a>
+
+                                        <div class="form-group row">
+                                            <div class="col-md-12">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" name="remember" id="remember"
+                                                        {{ old('remember') ? 'checked' : '' }}>
+
+                                                    <label class="form-check-label" for="remember">
+                                                        {{ __('Remember Me') }}
+                                                    </label>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="checkbox">
-                                            <label>
-                                                <input type="checkbox"> Mantenha-me Logado
-                                            </label>
+
+                                        <div class="form-group row mb-0">
+                                            <div class="col-md-12">
+                                                <button type="submit" class="btn btn-primary btn-block">
+                                                    {{ __('Login') }}
+                                                </button>
+
+                                                @if (Route::has('password.request'))
+                                                <a class="btn btn-link" href="{{ route('password.request') }}">
+                                                    {{ __('Forgot Your Password?') }}
+                                                </a>
+                                                @endif
+                                            </div>
                                         </div>
+                                            <div class="bottom text-left">
+                                                Novo por aqui? <a href="/cadastroUsuario"><b>Cadastre-se</b></a>
+                                            </div>
                                     </form>
                                 </div>
-                                <div class="bottom text-center">
-                                    Novo por aqui? <a href="/cadastroUsuario"><b>Cadastre-se</b></a>
-                                </div>
+
                             </div>
                         </li>
                     </ul>
@@ -168,7 +212,7 @@ $('.owl-carousel').owlCarousel({
         monthNames: ['Janeiro','Fevereiro','Março','Abril','Maio','Junho','Julho','Agosto','Setembro','Outubro','Novembro','Dezembro'],
         monthNamesShort: ['Jan','Fev','Mar','Abr','Mai','Jun','Jul','Ago','Set','Out','Nov','Dez']
     });
-    
+
   } );
   </script>
 <script src="js/main.js"></script>

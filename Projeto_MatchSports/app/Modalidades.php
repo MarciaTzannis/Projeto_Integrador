@@ -23,4 +23,9 @@ class Modalidades extends Model
     public function getSlug(){
         return $this->slug;
     }
+
+    public function evento() {
+        return $this->hasMany(Evento::Class, 'modalidade_fk', 'id_modalidade');
+    }
+
 }

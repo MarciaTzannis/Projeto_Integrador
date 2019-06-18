@@ -14,14 +14,14 @@ class AdicionarFotoEnderecoNascimentoSexoNaTabelaUsers extends Migration
     public function up()
     {
         Schema::table('users', function (Blueprint $table) {
-            $table->string('photo',1000)->nullable();
+            $table->string('photo',1000)->default('http://downloadicons.net/sites/default/files/Users-Icon-983960.png');
             $table->string('endereco',1000)->nullable();
             $table->string('cidade',100)->nullable();
             $table->string('estado',100)->nullable();
             $table->string('cep')->nullable();
             $table->date('data_nascimento')->nullable();
             $table->string('sexo',100)->nullable();
-                   
+
         });
     }
 

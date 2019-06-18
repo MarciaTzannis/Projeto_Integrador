@@ -11,7 +11,7 @@ class Evento extends Model
     // public $timestamps = true;
 
     protected $fillable = [
-        'nome', 'descricao', 'regiao', 'local', 'cidade_uf', 'data', 'hora'
+        'nome', 'descricao', 'regiao', 'local', 'cidade_uf', 'data', 'hora','modalidade_fk','user_id'
     ];
 
     public function getNome(){
@@ -42,10 +42,13 @@ class Evento extends Model
         return $this->hora;
     }
 
-    /* public function getSlug(){
-        return $this->slug;
+    public function getModalidade_fk(){
+        return $this->modalidade_fk;
     }
-    */
+    
+    public function getUser_id(){
+        return $this->user_id;
+    }
 
     public function mensagem() {
         return $this->hasMany(Mensagem::Class, 'evento_fk', 'id_evento');
@@ -54,5 +57,5 @@ class Evento extends Model
     public function modalidades() {
         return $this->hasOne(Modalidades::Class, 'modalidade_fk', 'id_modalidade');
     }
-}
 
+}
