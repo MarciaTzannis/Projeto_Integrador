@@ -44,7 +44,7 @@
 
                         <p class="card-text"><b>Descrição do evento:</b>  {{ $evento->descricao }}</p>
 
-                        <a href="/post" class="btn btn-primary">Entre no evento &rarr;</a>
+                        <a href="/post/{{$evento->id_evento}}" class="btn btn-primary">Entre no evento &rarr;</a>
                     </div>
 
                 </div>

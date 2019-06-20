@@ -465,12 +465,62 @@ footer a:hover {
 #paginaLogin .bottom{
         margin-top: 20px;
     }
-/* Página POST */
+
+
+
+    /* Página POST */
 .post {
     /* position: fixed; */
     font-style: normal;
-    margin-top: 50px;
+    margin-top: 60px;
 }
+
+/* novo post */
+
+.chat {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.chat li {
+        margin-bottom: 10px;
+        padding-bottom: 5px;
+        border-bottom: 1px dotted #B3A9A9;
+}
+
+.chat .img-circle{
+    display: inline-block;
+    padding: 10px 0;
+}
+
+.texto-chat2 {
+    margin-left: 55em;
+    margin-right: 88em;
+
+}
+
+.chat-body {
+    width: calc(100% - 60px);
+    float: right;
+    padding-left: 10px;
+}
+
+.dentrochat{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+   }
+
+.panel-chat{
+    overflow-y: scroll;
+    height: 70vh;
+    padding: 15px;
+}
+
+
 
 @media(max-width:1200px) {
     .carousel-inner>.item>img {

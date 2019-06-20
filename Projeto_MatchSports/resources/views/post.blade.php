@@ -2,78 +2,74 @@
 
 @section('content')
 
-    <section class="post">
-        <div class="form-group col-md-12">
-            <div class="container-post">
-                <h3>Evento - Corrida das Estações - 5KM.</h3>
-                <p>Data: 21/05/2019 - Local : Pacaembu</p><br>
-            </div>
-
-            <!-- Left-aligned media object -->
-            <div class="media">
-                <div class="media-left">
-                    <img src="img/foto.jpg" class="media-object" style="width:60px">
-                </div>
-                <div class="media-body">
-                    <h4 class="media-heading">Douglas Martins</h4>
-                    <p>Olá Pessoal observei que todos estão aptos para nosso encontro, podemos nos encontrar uma hora
-                        antes?
-                        Alguém tem alguma sugestão de local para nos encontrar para o aquecimento?
-                    </p>
-                </div>
-            </div>
-            <hr>
-
-            <!-- Left-aligned media object -->
-            <div class="media">
-                <div class="media-left">
-                    <img src="img/Marcia.jpg" class="media-object" style="width:60px">
-                </div>
-                <div class="media-body">
-                    <h4 class="media-heading">Marcia</h4>
-                    <p>Podemos nos encontrar no mercado Extra uma antes, tudo bem para vocês?.</p>
-                </div>
-            </div>
-            <hr>
-
-            <!-- Left-aligned media object -->
-            <div class="media">
-                <div class="media-left">
-                    <img src="img/Giseli.jpg" class="media-object" style="width:60px">
-                </div>
-                <div class="media-body">
-                    <h4 class="media-heading">Giseli</h4>
-                    <p>Ok,Levo água para todos até lá!</p>
-                </div>
-            </div>
-            <hr>
-
-            <!-- Left-aligned media object -->
-            <div class="media">
-                <div class="media-left">
-                    <img src="img/daniel.jpg" class="media-object" style="width:60px">
-                </div>
-                <div class="media-body">
-                    <h4 class="media-heading">Daniel</h4>
-                    <p>Combinado!.</p>
-                </div>
-            </div>
-            <hr>
 
 
-            <!-- Left-aligned media object -->
-            <div class="media">
-                <div class="media-left">
-                    <img src="img/Edu.jpg" class="media-object" style="width:60px">
+<div class="container">
+    <div class="row">
+        <div class="col-md-10">
+
+            <h1 class="post">Post
+                <small>Corrida</small>
+            </h1>
+
+
+            @if (count($tarefasPendentes) > 0)
+
+            <div class="panel panel-primary">
+
+                <div class="panel-body panel-chat">
+
+                    <ul class="chat">
+                        @foreach($tarefasPendentes as $tarefa)
+
+                        <li class="left clearfix">
+                            <div class="pull-left">
+                                <img src="http://placehold.it/50/55C1E7/fff&amp;text=U" alt="User Avatar"
+                                    class="img-circle">
+                            </div>
+                            <div class="chat-body clearfix dentrochat">
+
+                                <div class="header">
+                                    <small class=" text-muted pull-right"><span
+                                            class="glyphicon glyphicon-time"></span>{{ $tarefa->created_at }}</small>
+                                    <strong class="primary-font texto-chat"> {{ Auth::user()->name }}</strong>
+                                </div>
+                                <small class="pull-right text-muted">
+                                    <a href="/concluir-tarefa/{{ $tarefa->id }}">Excluir</a>
+                                </small>
+
+                                <p texto-chat2>{{ $tarefa->description }}</p>
+                            </div>
+                        </li>
+                        @endforeach
+                    </ul>
                 </div>
-                <div class="media-body">
-                    <h4 class="media-heading">Eduardo- Motoca</h4>
-                    <p>Galera, vou de motoca devo chegar antes de vocês Até!.</p>
-                </div>
+                
+                
+                
+                
+                
+                
+                
+                @endif
+                <form action="/nova-tarefa" method="POST">
+                <div class="panel-footer">
+                    <div class="input-group">
+                        @csrf
+                        <input type="hidden" name="evento_fk" value="{{ $evento->id_evento }}">
+                        <!-- <label class="form-control">Tarefa</label> -->
+                        <textarea style="resize: none" name="description" class="form-control input-sm"></textarea>
+                        <span class="input-group-btn">
+                            <button class="btn btn-warning btn-lg" type="submit">
+                                Enviar</button>
+                            </span>
+                        </div>
+                    </div>
+                </form>
             </div>
-            <hr>
         </div>
-    </section>
-
-
-@endsection
+    </div>
+        
+    </div>
+    
+    @endsection

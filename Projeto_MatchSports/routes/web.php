@@ -33,3 +33,10 @@ Route::get('/home','PaginaInicialController@exibirModalidades')->name('home');
 
 Route::get('auth/{provider}', 'Auth\LoginController@redirectToProvider');
 Route::get('auth/{provider}/callback', 'Auth\LoginController@handleProviderCallback');
+
+Route::get('/post/{id}', 'PostController@inicio');
+
+// toda vez que envia tem q ser post
+Route::post('/nova-tarefa','PostController@novaTarefa');
+
+Route::get('/concluir-tarefa/{id}','Controller@concluirTarefa');

@@ -15,8 +15,8 @@ class CriarTabelaMensagem extends Migration
     {
         Schema::create('mensagem', function (Blueprint $table) {
             $table->bigIncrements('id_mensagem');
-            $table->longText('mensagem');
-            $table->dateTime('data_hora');
+            $table->longText('description');
+            $table->dateTime('data_hora')->now();
             $table->unsignedBigInteger('user_id')->unsigned();
             $table->unsignedBigInteger('evento_fk')->unsigned();
             $table->foreign('evento_fk')->references('id_evento')->on('evento');

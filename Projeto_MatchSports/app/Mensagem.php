@@ -18,7 +18,9 @@ class Mensagem extends Model
     }
 
     
-}
+
+    
+
 
 }
 
