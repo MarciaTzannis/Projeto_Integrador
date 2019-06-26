@@ -34,9 +34,9 @@ Route::get('/home','PaginaInicialController@exibirModalidades')->name('home');
 Route::get('auth/{provider}', 'Auth\LoginController@redirectToProvider');
 Route::get('auth/{provider}/callback', 'Auth\LoginController@handleProviderCallback');
 
-Route::get('/post/{id}', 'PostController@inicio');
+Route::get('/post/{id}', 'PostController@inicio')->middleware(['auth']);
 
 // toda vez que envia tem q ser post
-Route::post('/nova-tarefa','PostController@novaTarefa');
+Route::post('/nova-tarefa','PostController@novaTarefa')->middleware(['auth']);
 
-Route::get('/concluir-tarefa/{id}','Controller@concluirTarefa');
+Route::get('/concluir-tarefa/{id}','Controller@concluirTarefa')->middleware(['auth']);

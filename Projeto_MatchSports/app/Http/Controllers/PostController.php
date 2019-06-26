@@ -28,6 +28,7 @@ class PostController extends Controller
         $tarefa->done=false;
         // pegar o usuario q esta logado a partir do auth
         $tarefa->user_id= auth()->user()->id;
+        // $tarefa->user_name= auth()->user()->name;
         $tarefa->evento_fk = $request->input('evento_fk');
         $tarefa->save();
         // depois que salva volta para a pagina principal
