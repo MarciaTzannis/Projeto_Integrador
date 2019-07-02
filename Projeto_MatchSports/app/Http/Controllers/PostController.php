@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 
 use App\Mensagem;
 use App\Evento;
+use App\Modalidades;
 
 class PostController extends Controller
 {
@@ -14,11 +15,12 @@ class PostController extends Controller
         // vai lá em tarefas onde a coluna done é igual a false
         $tarefasPendentes = Mensagem::where('evento_fk','=',$id)->get();
         $evento = Evento::find($id);
+        $modalidadeUnica = Modalidades::find($evento->modalidade_fk);
         // get importa a tarde para o inicio
         return view('post')
             ->with('tarefasPendentes',$tarefasPendentes)
-            ->with('evento', $evento);
-
+            ->with('evento', $evento)
+            ->with('nomeModalidade', $modalidadeUnica->nome);
     }
 
     public function novaTarefa(Request $request){

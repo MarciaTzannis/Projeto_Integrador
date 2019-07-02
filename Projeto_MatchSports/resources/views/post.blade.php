@@ -8,8 +8,8 @@
     <div class="row">
         <div class="col-md-10">
 
-            <h1 class="post">Post
-                <small>Corrida</small>
+            <h1 class="post">Combine seu encontro de 
+                <small>{{ $nomeModalidade }}</small>
             </h1>
 
 

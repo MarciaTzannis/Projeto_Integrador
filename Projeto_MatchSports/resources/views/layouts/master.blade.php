@@ -19,6 +19,27 @@
         <link rel="stylesheet" href="{{ url('css/style.css') }}">
         <link href="{{ url('css/feed/blog-home.css') }}" rel="stylesheet">
 
+        <!-- Configuração da Página Fale Conosco -->
+        <link rel="icon" type="image/png" href="{{ url('images/icons/favicon.ico') }}" />
+        <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+        <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+        <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+        <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+        <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+        <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+        <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+        <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="css/utilFaleConosco.css">
+        <link rel="stylesheet" type="text/css" href="css/mainFaleConosco.css">
+        <!--===============================================================================================-->
+
     </head>
 
     <body>
@@ -113,7 +134,7 @@
 
                                                 @if (Route::has('password.request'))
                                                 <a class="btn btn-link" href="{{ route('password.request') }}">
-                                                    {{ __('Forgot Your Password?') }}
+                                                    {{ __('Esqueceu sua senha?') }}
                                                 </a>
                                                 @endif
                                             </div>

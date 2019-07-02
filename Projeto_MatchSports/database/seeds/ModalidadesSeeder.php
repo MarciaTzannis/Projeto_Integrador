@@ -104,12 +104,6 @@ class ModalidadesSeeder extends Seeder
       $modalidade->save();
 
       $modalidade   = new Modalidades;
-      $modalidade->nome = 'Bicicleta';
-      $modalidade->logotipo = 'logobicicleta.png';
-      $modalidade->slug = 'bicicleta';
-      $modalidade->save();
-
-      $modalidade   = new Modalidades;
       $modalidade->nome = 'Stand Up Paddle';
       $modalidade->logotipo = 'logostandup.png';
       $modalidade->slug = 'stand_up';

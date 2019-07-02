@@ -152,7 +152,8 @@
 
     </div>
 </section>
-<section id="fale-conosco">
+
+<!-- <section id="fale-conosco">
     <div class="container container-fc">
         <h3>Escolha a melhor forma de falar com a gente:</h3>
         <div id="panel" class="panel panel-default no-padding">
@@ -160,7 +161,7 @@
                 <form role="form" class="form-horizontal">
                     <div class="row-fluid">
                         <div class="col-md-7 col-sm-12 col-xs-12 banner">
-                            <!-- Background image -->
+                          
                         </div>
 
                     </div>
@@ -205,6 +206,88 @@
         </div>
     </div>
     </div>
-</section>
+</section> -->
+
+<section id="fale-conosco">
+<div class="container-contact100">
+		<div class="wrap-contact100">
+			<form class="contact100-form validate-form">
+				<span class="contact100-form-title">
+					Contato!
+				</span>
+
+				<div class="wrap-input100 validate-input" data-validate="Nome obrigatório">
+					<span class="label-input100">Nome</span>
+					<input class="input100" type="text" name="name" placeholder="Escreva seu nome">
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100 validate-input" data-validate="Email obrigatório: ex@abc.xyz">
+					<span class="label-input100">Email</span>
+					<input class="input100" type="text" name="email" placeholder="Escreva seu email">
+					<span class="focus-input100"></span>
+				</div>
+
+
+
+				<div class="wrap-input100 validate-input" data-validate="Mensagem obrigatória">
+					<span class="label-input100">Messagem</span>
+					<textarea class="input100" name="message" placeholder="Sua mensagem . . ."></textarea>
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="container-contact100-form-btn">
+					<div class="wrap-contact100-form-btn">
+						<div class="contact100-form-bgbtn"></div>
+						<button class="contact100-form-btn">
+							<span>
+								Enviar
+								<i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i>
+							</span>
+						</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+
+    <div id="dropDownSelect1"></div>
+
+    <!--===============================================================================================-->
+    <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="vendor/animsition/js/animsition.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="vendor/bootstrap/js/popper.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="vendor/select2/select2.min.js"></script>
+    <script>
+        $(".selection-2").select2({
+            minimumResultsForSearch: 20,
+            dropdownParent: $('#dropDownSelect1')
+        });
+    </script>
+    <!--===============================================================================================-->
+    <script src="vendor/daterangepicker/moment.min.js"></script>
+    <script src="vendor/daterangepicker/daterangepicker.js"></script>
+    <!--===============================================================================================-->
+    <script src="vendor/countdowntime/countdowntime.js"></script>
+    <!--===============================================================================================-->
+    <script src="js/main.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-23581568-13');
+    </script>
+</section> 
 
 @stop
