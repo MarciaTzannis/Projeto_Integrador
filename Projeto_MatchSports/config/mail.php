@@ -86,7 +86,7 @@ return [
 
     'username' => env('MAIL_USERNAME', 'matchsports.brasil@gmail.com'),
 
-    'password' => env('MAIL_PASSWORD', 'ecuyjwleluybyvif'),
+    'password' => env('MAIL_PASSWORD', 'matchsports2019'),
 
     /*
     |--------------------------------------------------------------------------
@@ -134,3 +134,4 @@ return [
     'log_channel' => env('MAIL_LOG_CHANNEL'),
 
 ];
+
