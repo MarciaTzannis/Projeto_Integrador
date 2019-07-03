@@ -142,7 +142,10 @@
 
         <div class="item logo">
             <a href="/feed/{{ $modalidade->slug }}">
-                <img src="{{ url('/img/{{ $modalidade->logotipo }}'}}'" alt="{{ $modalidade->nome }}">
+                @php
+                    $path = '/img/' . $modalidade->logotipo;
+                @endphp
+                <img src="{{ url($path) }}'" alt="{{ $modalidade->nome }}">
                 <div class="caption">
                     <h3>{{ $modalidade->nome }}</h3>
                 </div>
