@@ -46,7 +46,7 @@
     <nav class="navbar navbar-fixed-top">
     <div class="container-fluid">
         <div class="navbar-header">
-            <a href="/#home"><img src="{{ url('img/Nome.png') }}" title="MatchSports" /></a>
+            <a href="/#home"><img src="{{ url('img/nome.png') }}" title="MatchSports" /></a>
 
         </div>
         <button class="menu-mobile" title="menu" data-toggle="collapse" data-target=".menu-principal">&#9776;</button>

@@ -142,7 +142,7 @@
 
         <div class="item logo">
             <a href="/feed/{{ $modalidade->slug }}">
-                <img src="img/{{ $modalidade->logotipo }}" alt="{{ $modalidade->nome }}">
+                <img src="/img/{{ $modalidade->logotipo }}" alt="{{ $modalidade->nome }}">
                 <div class="caption">
                     <h3>{{ $modalidade->nome }}</h3>
                 </div>
