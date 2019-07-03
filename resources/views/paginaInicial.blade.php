@@ -145,7 +145,7 @@
                 @php
                     $path = '/img/' . $modalidade->logotipo;
                 @endphp
-                <img src="{{ url($path) }}'" alt="{{ $modalidade->nome }}">
+                <img src="{{ url($path) }}" alt="{{ $modalidade->nome }}">
                 <div class="caption">
                     <h3>{{ $modalidade->nome }}</h3>
                 </div>
