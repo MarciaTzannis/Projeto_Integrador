@@ -28,10 +28,9 @@ public function UserLogado(){
   }
   // final a relação está pronta mas não define qual campo puxar
 
-  
 
-    
+
+
 
 
 }
-

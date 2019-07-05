@@ -164,6 +164,16 @@ body {
     background: -webkit-linear-gradient(left, #1b9bdb, #84b331);
 }
 
+.botao_modalidades:hover {
+    border-radius: 30px;
+    margin-bottom: 20px;
+    font-family: Poppins-Medium;
+    font-size: 1.5em;
+    color: #fff;
+    line-height: 1.2;
+    background: -webkit-linear-gradient(left, #1b9bdb, #84b331);
+}
+
 .logoMatchSports {
     width: 3vw;
     opacity: 1;
@@ -483,14 +493,16 @@ footer p {
 
 /* Página POST */
 .post {
-    /* position: fixed; */
+    width: 250px;
+    text-align:center;
     font-style: normal;
-    margin-top: 60px;
+    margin-top: 100px;
 }
 
 /* novo post */
 .view-post {
-    min-height: 80vh;
+    display: inline;
+    min-height: 90vh;
 }
 
 .chat {
@@ -531,10 +543,28 @@ footer p {
 }
 
 .panel-chat {
+    background-image: url("../img/logoBgMatchSports.png");
+    background-position: center;
+    background-attachment:scroll;
+    background-position:center center;
+    background-size:contain;
+    background-repeat:no-repeat;
     overflow-y: scroll;
-    height: 70vh;
+    height: 50vh;
     padding: 15px;
 }
+
+.painel-primario{
+  border-top-left-radius: 125px;
+  border-top: 10px solid #25a1dd;
+  border-bottom-right-radius: 125px;
+  border-bottom: 10px solid #a4cb5b;
+  border-left: none;
+  border-right: none;
+  padding: 35px;
+  margin-top: 70px;
+  }
+
 
 .photo-chat {
     /* max-width: 150px; */
@@ -543,7 +573,28 @@ footer p {
     height: auto;
 }
 
+.chat-logo {
+    max-height: 250px;
+    width: auto;
+    height: auto;
+}
 
+.btn-chat {
+  color: white;
+  background: -webkit-linear-gradient(45deg, #83b230, #008dd4);
+}
+.btn-chat:hover {
+  color: white;
+  background: -webkit-linear-gradient(45deg, #83b230, #008dd4);
+}
+.btn-chat:active {
+  color: white;
+  background: -webkit-linear-gradient(45deg, #83b230, #008dd4);
+}
+.btn-chat:focus {
+  color: white;
+  background: -webkit-linear-gradient(45deg, #83b230, #008dd4);
+}
 
 @media(max-width:1200px) {
     .carousel-inner>.item>img {

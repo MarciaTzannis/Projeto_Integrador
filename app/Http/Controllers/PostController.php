@@ -10,7 +10,7 @@ use App\Modalidades;
 
 class PostController extends Controller
 {
-    
+
     public function inicio($id){
         // vai lá em tarefas onde a coluna done é igual a false
         $tarefasPendentes = Mensagem::where('evento_fk','=',$id)->get();
@@ -20,7 +20,8 @@ class PostController extends Controller
         return view('post')
             ->with('tarefasPendentes',$tarefasPendentes)
             ->with('evento', $evento)
-            ->with('nomeModalidade', $modalidadeUnica->nome);
+            ->with('nomeModalidade', $modalidadeUnica->nome)
+            ->with('logoModalidade', $modalidadeUnica->logotipo);
     }
 
     public function novaTarefa(Request $request){
