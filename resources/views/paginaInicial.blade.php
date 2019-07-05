@@ -119,104 +119,52 @@
 
 <div id="modalidades" class="container">
     <div class="dropdown menu-suspenso">
-      <h2>Modalidades</h2>
-      <h4>Encontre um grupo da sua modalidade favorita aqui!!</h4>
-        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"> Modalidades
+    <button class="botao_modalidades btn btn-light dropdown-toggle" type="button" data-toggle="dropdown"> Modalidades
             <span class="caret"></span></button>
+    
         <ul class="dropdown-menu scrollDropdown">
-
 
         @foreach ( $modalidades as $modalidade )
             <li><a href="/feed/{{ $modalidade->slug }}">{{ $modalidade->nome }}</a></li>
         @endforeach
 
         </ul>
+        
+        <h4>Encontre um grupo da sua modalidade favorita aqui!!</h4>
     </div>
 </div>
 
-<section class="sectionModalidades">
-  <h4>Ou por aqui...</h4>
-    <div class="owl-carousel owl-theme carrossel">
+<section class="sectionModalidades ">
+    <!-- <div class="owl-carousel owl-theme carrossel"> -->
 
-    @foreach ( $modalidades as $modalidade )
+    <div class = "container row">
 
-        <div class="item logo">
-            <a href="/feed/{{ $modalidade->slug }}">
-                @php
-                    $path = '/img/' . $modalidade->logotipo;
-                @endphp
-                <img src="{{ url($path) }}" alt="{{ $modalidade->nome }}">
-                <div class="caption">
-                    <h3>{{ $modalidade->nome }}</h3>
+        @foreach ( $modalidades as $modalidade )
+            <div class="col-xs-2">
+                <div class="item logo">
+                    <a href="/feed/{{ $modalidade->slug }}">
+                        @php
+                            $path = '/img/' . $modalidade->logotipo;
+                        @endphp
+                        <img src="{{ url($path) }}" alt="{{ $modalidade->nome }}">
+                        <div class="caption">
+                            <h3>{{ $modalidade->nome }}</h3>
+                        </div>
+                    </a>
                 </div>
-            </a>
-        </div>
-    @endforeach
-
+            </div>
+        @endforeach
     </div>
 </section>
-
-<!-- <section id="fale-conosco">
-    <div class="container container-fc">
-        <h3>Escolha a melhor forma de falar com a gente:</h3>
-        <div id="panel" class="panel panel-default no-padding">
-            <div class="panel-body no-padding">
-                <form role="form" class="form-horizontal">
-                    <div class="row-fluid">
-                        <div class="col-md-7 col-sm-12 col-xs-12 banner">
-                          
-                        </div>
-
-                    </div>
-
-                    <div class="col-md-5 col-sm-12 col-xs-12  padding border-left">
-                        <p class="lead">Mensagem</p>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <label label-default="" for="">Nome</label>
-                                <input type="text" name="nome" class="form-control">
-                            </div>
-                            <div class="col-md-6">
-                                <label label-default="" for="">Assunto</label>
-                                <input type="text" name="assunto" class="form-control">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <label label-default="" for="">Email</label>
-                                <input type="email" name="email" class="form-control">
-                            </div>
-                            <div class="col-md-6">
-                                <label label-default="" for="">Telefone</label>
-                                <input type="text" name="telefone" class="form-control">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12">
-
-                                <label label-default="" for="">Mensagem</label>
-                                <textarea name="mensagem" rows="3" style="resize: none" class="form-control"></textarea>
-
-                            </div>
-                        </div>
-                        <div class="row-fluid">
-                            <button class="btn btn-primary enviar">Enviar</button>
-                            <button class="btn btn-default limpar">Limpar</button>
-                        </div>
-                    </div>
-            </div>
-            </form>
-        </div>
-    </div>
-    </div>
-</section> -->
 
 <section id="fale-conosco">
 <div class="container-contact100">
 		<div class="wrap-contact100">
-			<form class="contact100-form validate-form">
-				<span class="contact100-form-title">
-					Contato!
+			<form class="contact100-form validate-form" action="{{ route('postContact') }}" method="post">
+                @csrf
+                @include('mensagem')
+                <span class="contact100-form-title">
+					Dúvidas ou sugestões, fale conosco!
 				</span>
 
 				<div class="wrap-input100 validate-input" data-validate="Nome obrigatório">
@@ -231,11 +179,9 @@
 					<span class="focus-input100"></span>
 				</div>
 
-
-
 				<div class="wrap-input100 validate-input" data-validate="Mensagem obrigatória">
 					<span class="label-input100">Messagem</span>
-					<textarea class="input100" name="message" placeholder="Sua mensagem . . ."></textarea>
+					<textarea class="input100" name="mensagem" placeholder="Sua mensagem . . ."></textarea>
 					<span class="focus-input100"></span>
 				</div>
 

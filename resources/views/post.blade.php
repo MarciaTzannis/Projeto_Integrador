@@ -6,7 +6,7 @@
 
 <div class="container">
     <div class="row">
-        <div class="col-md-10">
+        <div class="col-md-10 view-post">
 
             <h1 class="post">Combine seu encontro de 
                 <small>{{ $nomeModalidade }}</small>

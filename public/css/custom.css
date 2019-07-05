@@ -133,8 +133,8 @@ body {
 }
 
 footer {
-    position: absolute;
-    bottom: 0px;
+    position: absolute !important;
+    bottom: 0px !important;
     width: 100vw;
     display: flex;
     flex-direction: column;

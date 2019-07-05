@@ -9,13 +9,14 @@ html {
 }
 
 body {
-    background-color: #FAFAFA;
+    background-color: #E6E6E6;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     height: 100vh;
+    color: #2E2E2E;
 }
 
 
@@ -31,6 +32,8 @@ body {
 
 .nav>li>a {
     color: rgba(255, 255, 255, 0.6);
+    font-size: 18px;
+    padding-top: 21px;
 }
 
 .nav-link {
@@ -49,7 +52,7 @@ body {
 }
 
 .navbar-header img {
-    width: 130px;
+    width: 200px;
     margin: 10px 8px;
 }
 
@@ -77,6 +80,12 @@ body {
     font-size: 1.4em;
     color: rgba(255, 255, 255, 0.6);
     padding-top: 1vh;
+}
+
+.carousel-caption p {
+    color: white;
+    font-size: 20px;
+    text-shadow: black 0.1em 0.1em 0.2em;
 }
 
 .carousel-caption .btn {
@@ -133,8 +142,7 @@ body {
 }
 
 .sectionModalidades {
-    height: 100%;
-    margin-top: 140px;
+    height: 100vh;
 }
 
 .tituloModalidade h2 {
@@ -146,10 +154,20 @@ body {
     -webkit-text-fill-color: transparent;
 }
 
+.botao_modalidades {
+    border-radius: 30px;
+    margin-bottom: 20px;
+    font-family: Poppins-Medium;
+    font-size: 1.5em;
+    color: #fff;
+    line-height: 1.2;
+    background: -webkit-linear-gradient(left, #1b9bdb, #84b331);
+}
+
 .logoMatchSports {
     width: 3vw;
     opacity: 1;
-    margin: 8px;
+    margin: 6px;
 }
 
 .conteudo p {
@@ -209,9 +227,12 @@ body {
 
 /* CSS da Giseli - Saiba Mais */
 
+hr {
+    border-color: black;
+}
+
 #saiba-mais {
     padding-top: 100px;
-    padding-bottom: 90px;
     margin: 0 auto;
 }
 
@@ -330,21 +351,16 @@ footer {
     justify-content: center;
     align-items: center;
     background-color: black;
-    color: #f5f5f5;
     letter-spacing: 3px;
     height: 10vh;
 }
 
-footer a {
-    display: block;
-    margin-bottom: 5px;
+footer p {
+    font-size: 18px;
     color: #f5f5f5;
+    /* margin-left: 80px; */
 }
 
-footer a:hover {
-    color: #777;
-    text-decoration: none;
-}
 
 .text-center {
     padding: 5px 0 5px 0;
@@ -473,6 +489,9 @@ footer a:hover {
 }
 
 /* novo post */
+.view-post {
+    min-height: 80vh;
+}
 
 .chat {
     list-style: none;

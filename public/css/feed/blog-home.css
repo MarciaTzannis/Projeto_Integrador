@@ -11,6 +11,7 @@ body {
 #feed {
     padding-top: 56px;
     background: #FAFAFA;
+    min-height: 90vh;
 }
 
 .evento {

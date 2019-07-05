@@ -40,3 +40,6 @@ Route::get('/post/{id}', 'PostController@inicio')->middleware(['auth']);
 Route::post('/nova-tarefa','PostController@novaTarefa')->middleware(['auth']);
 
 Route::get('/concluir-tarefa/{id}','Controller@concluirTarefa')->middleware(['auth']);
+
+// Enviando formulário
+Route::post('/home', 'EmailController@postContact')->name('postContact');
