@@ -231,6 +231,15 @@ iframe {
     margin-top: 50px;
 }
 
+.cadastroEvento {
+    width: 800px;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 20px 30px;
+    margin-top: 50px;
+}
+
 /*------------------------------------------------------------------
   [ Form ]*/
 

@@ -160,7 +160,7 @@ body {
 
 .botao_modalidades {
     border-radius: 30px;
-    margin-bottom: 20px;
+    margin: 25px;
     font-size: 1.5em;
     color: #fff;
     line-height: 1.2;
@@ -169,7 +169,7 @@ body {
 
 .botao_modalidades:hover {
     border-radius: 30px;
-    margin-bottom: 20px;
+    margin: 25px;
     font-size: 1.5em;
     color: #fff;
     line-height: 1.2;
@@ -472,7 +472,6 @@ footer p {
 
 #paginaLogin {
     position: relative;
-    margin-top: 80px;
 }
 
 #paginaLogin .card-login {

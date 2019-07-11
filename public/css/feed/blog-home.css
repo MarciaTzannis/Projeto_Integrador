@@ -28,7 +28,7 @@ body {
 }
 
 #feed {
-    padding-top: 56px;
+    padding-top: 70px;
     background: #FAFAFA;
     min-height: 90vh;
 }
@@ -43,7 +43,7 @@ body {
 }
 
 .card-body h2 {
-    margin-left: 50px;
+    margin: 20px 50px;
 }
 
 .img-feed {
@@ -83,7 +83,7 @@ body {
 
 .botao_criar-eventos {
     border-radius: 30px;
-    margin-bottom: 20px;
+    margin: 25px;
     font-size: 1.5em;
     color: #fff;
     line-height: 1.2;

@@ -36,8 +36,8 @@
         <!--===============================================================================================-->
         <link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
         <!--===============================================================================================-->
-        <link rel="stylesheet" type="text/css" href="css/utilFaleConosco.css">
-        <link rel="stylesheet" type="text/css" href="css/mainFaleConosco.css">
+        <link rel="stylesheet" type="text/css" href="{{ url('css/utilFaleConosco.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ url('css/mainFaleConosco.css') }}">
         <!--===============================================================================================-->
 
     </head>
