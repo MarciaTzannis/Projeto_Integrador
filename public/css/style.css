@@ -110,6 +110,8 @@ body {
     display: inline-block;
 }
 
+
+
 .scrollDropdown {
     height: 250px;
     overflow: auto;
@@ -159,7 +161,6 @@ body {
 .botao_modalidades {
     border-radius: 30px;
     margin-bottom: 20px;
-    font-family: Poppins-Medium;
     font-size: 1.5em;
     color: #fff;
     line-height: 1.2;
@@ -169,7 +170,6 @@ body {
 .botao_modalidades:hover {
     border-radius: 30px;
     margin-bottom: 20px;
-    font-family: Poppins-Medium;
     font-size: 1.5em;
     color: #fff;
     line-height: 1.2;
@@ -505,6 +505,11 @@ footer p {
 .view-post {
     display: inline;
     min-height: 90vh;
+}
+
+.view-post a:focus, .view-post a:hover {
+    color: #337ab7;
+    text-decoration: none;
 }
 
 .chat {

@@ -88,10 +88,13 @@
               </div>
             </div>
             <div class="col-xs-2 view-post">
+              <a href="/feed/{{ $slugModalidade }}">
               <h1 class="post">{{ $nomeModalidade }}</h1>
           <img class="chat-logo img-circle"src="\img\{{ $logoModalidade }}" alt="Logo MatchSports"
               class="img-circle">
-        </div>
+              </a>
+            </div>
+          
     </div>
 
 </div>

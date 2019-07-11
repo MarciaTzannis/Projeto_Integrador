@@ -1,8 +1,27 @@
-/*!
- * Start Bootstrap - Blog Home (https://startbootstrap.com/template-overviews/blog-home)
- * Copyright 2013-2019 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-blog-home/blob/master/LICENSE)
- */
+/*//////////////////////////////////////////////////////////////////
+[ FONT ]*/
+
+@font-face {
+    font-family: Poppins-Regular;
+    src: url('../fonts/poppins/Poppins-Regular.ttf');
+}
+
+@font-face {
+    font-family: Poppins-Medium;
+    src: url('../fonts/poppins/Poppins-Medium.ttf');
+}
+
+@font-face {
+    font-family: Poppins-Bold;
+    src: url('../fonts/poppins/Poppins-Bold.ttf');
+}
+
+@font-face {
+    font-family: Poppins-SemiBold;
+    src: url('../fonts/poppins/Poppins-SemiBold.ttf');
+}
+
+
 body {
     /* padding-top: 56px; */
 
@@ -20,7 +39,7 @@ body {
     border-bottom-right-radius: 100px;
     border-bottom: 5px solid #a4cb5b;
     margin-top: 10px;
-    /* background: linear-gradient(to bottom right, #25a1dd 0%, #a4cb5b 100%); */
+    margin-bottom: 15px;
 }
 
 .card-body h2 {
@@ -32,6 +51,13 @@ body {
     display: inline-block;
     margin: 0 10px;
     width: 20%;
+}
+
+.img-feedVazio {
+    float: left;
+    display: inline-block;
+    margin: 0 10px;
+    width: 40%;
 }
 
 .foto-post {
@@ -50,6 +76,82 @@ body {
 .nav-lateral {
     text-align: justify;
 }
+
+.menu-suspenso-feed{
+  margin: 0 auto;
+}
+
+.botao_criar-eventos {
+    border-radius: 30px;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    color: #fff;
+    line-height: 1.2;
+    background: -webkit-linear-gradient(left, #1b9bdb, #84b331);
+    -moz-box-shadow:
+      0px 0px 30px rgba(000,000,000,1),
+      inset 0px 0px 0px rgba(17,97,140,0);
+    -webkit-box-shadow:
+      0px 0px 30px rgba(000,000,000,1),
+      inset 0px 0px 0px rgba(17,97,140,0);
+    box-shadow:
+      0px 0px 30px rgba(000,000,000,1),
+      inset 0px 0px 0px rgba(17,97,140,0);
+}
+
+
+.botao_criar-eventos i {
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+.botao_criar-eventos:hover {
+    border-radius: 30px;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    color: #fff;
+    line-height: 1.2;
+    background: -webkit-linear-gradient(left, #84b331, #1b9bdb);
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+.botao_criar-eventos:hover i {
+    -webkit-transform: translateX(10px);
+    -moz-transform: translateX(10px);
+    -ms-transform: translateX(10px);
+    -o-transform: translateX(10px);
+    transform: translateX(10px);
+}
+
+.botao_eventos {
+	font-size: 20px;
+	color: #ffffff;
+	padding: 5px 30px;
+	background: #1b9bdb;
+	/* -moz-border-radius: 19px;
+	-webkit-border-radius: 19px;
+	/* border-radius: 19px; */
+	border: 0px solid #134201;
+}
+
+.botao_eventos:hover, .botao_eventos:active {
+	font-size: 20px;
+	color: #ffffff;
+	padding: 5px 40px;
+	background: #1b9bdb;
+	border-radius: 50px;
+	border: 0px solid #134201;
+  left: 50px;
+  transition: 0.7s;
+}
+
+
+
 
 @media (max-width:576px) {
 

@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Modalidades;
 use App\Evento; // para chamar o modal evento.php
+use App\User;
+
 
 
 class feedController extends Controller
@@ -27,10 +29,12 @@ class feedController extends Controller
 
     public function exibirDetalhes($slug)
     {
+      $modalidades = Modalidades::all();
+      $modalidade = Modalidades::where('slug', '=',$slug)->get(); // find() procura obrigatoriamente pelo id PK
 
-     $modalidade = Modalidades::where('slug', '=',$slug)->get(); // find() procura obrigatoriamente pelo id PK
-     return view('feed-modalidade')
-     ->with('modalidade',$modalidade[0]);
+      return view('feed-modalidade')
+      ->with('modalidades',$modalidades)
+      ->with('modalidade',$modalidade[0]);
     }
 
  public function salvarEvento(Request $request)
@@ -64,7 +68,9 @@ class feedController extends Controller
 
      // return redirect()->withInput();
      // $this->exibirDetalhes("capoeira");
+
      return redirect()->action("FeedController@exibirDetalhes", ['slug'=>$request->slug]);
+     ;
  }
 
 

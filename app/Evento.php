@@ -4,6 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
+
 class Evento extends Model
 {
     protected $table = 'evento';
@@ -45,7 +46,7 @@ class Evento extends Model
     public function getModalidade_fk(){
         return $this->modalidade_fk;
     }
-    
+
     public function getUser_id(){
         return $this->user_id;
     }
@@ -57,5 +58,10 @@ class Evento extends Model
     public function modalidades() {
         return $this->hasOne(Modalidades::Class, 'modalidade_fk', 'id_modalidade');
     }
+
+    public function UserLogado(){
+
+        return $this->hasOne(User::class,'id','user_id');
+      }
 
 }

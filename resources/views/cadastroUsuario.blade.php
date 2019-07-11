@@ -129,14 +129,14 @@
                   <span class="focus-input100"></span>
                 </div>
 
-                <div class="wrap-input50 validate-input" data-validate="Coloque uma cidade valida.">
+                <div class="wrap-input50 validate-input" data-validate="Coloque data de nascimento.">
                   <span class="label-input100" for="inputCity">Data de Nascimento</span>
                   <input class="input100" type="text" name="data_nascimento" id="datepicker">
                   <span class="focus-input100"></span>
                 </div>
 
 
-                <div class="wrap-input100 validate-input" data-validate="Coloque uma cidade valida.">
+                <div class="wrap-input100 validate-input" data-validate="Coloque seu sexo.">
                   <span class="label-input100" for="inputCity">Sexo</span>
                   <div class="input100">
 
@@ -146,15 +146,30 @@
 
                 </div>
 
-
-                <span class="label-input100" for="inputCity">Login via:</span>
+                <div class="wrap-input100 validate-input" data-validate="Escolha sua foto">
+                  <span class="label-input100" for="inputPhoto">Foto</span>
+                  <div class="input-group">
+                    <input type="text" class="input100 form-control" name="photo" placeholder="Escolha sua foto..." id="inputPhoto">
+                    <span class="input-group-btn">
+                      <span class="btn btn-default " style="font-family: Poppins-Regular;"> Upload</span>
+                    </span>
+                  </div>
+                </div>
 
                 <div class="wrap-input100 social-buttons">
-                    <a href="{{ url('/auth/facebook')}}" class="btn btn-fb"><i class="fa fa-facebook"></i>
+                  <span class="label-input100" >Login via:</span>
+                  <div class="input100">
+
+                    <a href="{{ url('/auth/facebook')}}" class="btn btn-fb btn-group-lg"><i class="fa fa-facebook"></i>
                         Facebook</a>
-                    <a href="{{ url('/auth/google')}}" class="btn btn-tw"><i class="fa fa-google+"></i>
+                    <a href="{{ url('/auth/google')}}" class="btn btn-tw btn-group-lg"><i class="fa fa-google+"></i>
                         Google+</a>
+                        <span class="focus-input100"></span>
+
+                      </div>
                 </div>
+
+
 
 
 				<div class="container-contact100-form-btn">

@@ -21,6 +21,7 @@ class PostController extends Controller
             ->with('tarefasPendentes',$tarefasPendentes)
             ->with('evento', $evento)
             ->with('nomeModalidade', $modalidadeUnica->nome)
+            ->with('slugModalidade', $modalidadeUnica->slug)
             ->with('logoModalidade', $modalidadeUnica->logotipo);
     }
 

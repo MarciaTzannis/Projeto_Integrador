@@ -15,14 +15,11 @@
 
 
 
-            <h1 class="my-4">Eventos
-              <small>{{ $modalidade->nome }}</small>
+              <h1 class="my-4">Eventos de
+            {{ $modalidade->nome }}
             </h1>
+            @if (count($eventos) > 0)
 
-
-            <a href="/cadastroEvento/{{ $modalidade->id_modalidade }}" class="btn btn-default btn-md">
-              <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Crie um novo evento
-            </a>
             <!-- Blog Post -->
             @foreach ($eventos as $evento)
 
@@ -44,45 +41,66 @@
 
                         <p class="card-text"><b>Descrição do evento:</b>  {{ $evento->descricao }}</p>
 
-                        <a href="/post/{{$evento->id_evento}}" class="btn btn-primary">Entre no evento &rarr;</a>
+                        <a href="/post/{{$evento->id_evento}}" class="botao_eventos btn dropdown-toggle">Entre no evento &rarr;</a>
                     </div>
 
                 </div>
                     <div class="card-footer text-muted">
                         Postado em {{ $evento->created_at }} por
-                        <a href="#">Douglas</a>
+                        <a href="#"> {{ $evento->UserLogado->name }}</a>
                     </div>
                 </div>
                 @endforeach
 
+                @else
+
+                <p>Ainda não tem nenhum evento criado para {{ $modalidade->nome }}. = (</p>
+                <p>Seja o primeiro criar um  evento clicando no logos ou no botão ao lado.</p>
+
+                <a href="/cadastroEvento/{{ $modalidade->id_modalidade }}">
+                <div class="img-feedVazio">
+                  <img class="card-img-top foto-post" src="{{ url('img') . '/' . $modalidade->logotipo }}" alt="{{ $modalidade->logotipo }}">
+                </div>
+                <div class="img-feedVazio">
+                  <img class="card-img-top foto-post" src="../img/Logo Match Sports.png" alt="{{ $modalidade->logotipo }}">
+                </div>
+                </a>
+
+                @endif
       <!-- Pagination -->
-                
+
             </div>
 
             <!-- Sidebar Widgets Column -->
             <div class="col-md-4">
 
-                <!-- Search Widget -->
-                <div class="card my-4">
-                    <h5 class="card-header">Procure o seu evento:</h5>
-                    <div class="card-body">
-                        <div class="input-group">
-                            <input type="text" class="form-control" placeholder="Digite aqui...">
-                            <span class="input-group-btn">
-                                <button class="btn btn-secondary" type="button">Match Sports!</button>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-
                 <!-- Side Widget -->
                 <div class="card my-4">
-                    <h3 class="card-header">Como funciona: </h3>
+                    <h2 class="card-header">Como funciona: </h2>
                     <div class="card-body nav-lateral">
                         <p>Escolha um evento que mais te agrade e faça novas amizades praticando de esportes.</p>
                         <p>Nesta parte você escolhe o seu esporte conforme o seu nivel, localização e horario que mais se adeque a suas necessidades.</p>
                         <p>Mas caso você não encontre nenhum evento que te atenda crie o seu proprio evento!!</p>
                         <p>Dê um Match Sports!!!! </p>
+                    </div>
+                    <a href="/cadastroEvento/{{ $modalidade->id_modalidade }}" class="botao_criar-eventos btn btn-light dropdown-toggle">
+                      <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Crie um novo evento
+                    </a>
+                </div>
+
+                <div class="card my-4">
+                    <h4 class="card-header">Procure por outras modalidades:</h4>
+                    <div class="dropdown menu-suspenso menu-suspenso-feed">
+                    <button class="botao_modalidades btn btn-light dropdown-toggle" type="button" data-toggle="dropdown"> Modalidades
+                            <span class="caret"></span></button>
+
+                        <ul class="dropdown-menu scrollDropdown">
+
+                        @foreach ( $modalidades as $modalidade )
+                            <li><a href="/feed/{{ $modalidade->slug }}">{{ $modalidade->nome }}</a></li>
+                        @endforeach
+
+                        </ul>
                     </div>
                 </div>
 
@@ -93,5 +111,7 @@
 
     </div>
 </div>
+
+
 
  @endsection

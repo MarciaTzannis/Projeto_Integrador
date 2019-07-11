@@ -70,9 +70,6 @@
                           <label>Hora</label>
                           <input type="text" name="hora" class="form-control"></input>
 
-
-
-
                         </div>
                         <div class="form-group col-md-6">
 
@@ -95,7 +92,7 @@
             </div>
         </div>
     </div>
-   
+
 
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
