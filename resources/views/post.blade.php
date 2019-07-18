@@ -3,22 +3,17 @@
 @section('content')
 
 
-
 <div class="container">
     <div class="row">
         <div class="col-xs-10 view-post">
-
-
-
             @if (count($tarefasPendentes) > 0)
             <div class="panel panel-primary painel-primario">
 
                 <div class="panel-body panel-chat" id="scrollbarBottom">
 
-                    <ul class="chat">
+                    <ul class="chat" id="aFazer">
 
                         @foreach($tarefasPendentes as $tarefa)
-
                         <li class="left clearfix">
                             <div class="pull-left">
                                 <img class="photo-chat img-circle"src="{{$tarefa->UserLogado->photo}}" alt="User Avatar"
@@ -36,9 +31,6 @@
                                     <strong class="primary-font texto-chat"> {{ $tarefa->UserLogado->name }}</strong>
                                     @endisset
                                 </div>
-                                <!-- <small class="pull-right text-muted">
-                                    <a href="/concluir-tarefa/{{ $tarefa->id }}">Excluir</a>
-                                </small> -->
 
                                 <p texto-chat2>{{ $tarefa->description }}</p>
                             </div>
@@ -71,16 +63,15 @@
                         </ul>
                     </div>
                 @endif
-                <form action="/nova-tarefa" method="POST">
+                <form action="/nova-tarefa" method="POST" id="formulario-post">
                     <div class="panel-footer">
                         <div class="input-group">
                             @csrf
                             <input type="hidden" name="evento_fk" value="{{ $evento->id_evento }}">
                             <!-- <label class="form-control">Tarefa</label> -->
-                            <textarea style="resize: none" name="description" class="form-control input-sm" placeholder="Escreva aqui sua mensagem..."></textarea>
+                            <textarea style="resize: none" name="description" class="form-control input-sm" placeholder="Escreva aqui sua mensagem..." id="textArea"></textarea>
                             <span class="input-group-btn">
-                                <button class="btn btn-chat btn-lg" type="submit">
-                                    Enviar</button>
+                                <button class="btn btn-chat btn-lg" type="submit" onclick="return validar()">Enviar</button>
                             </span>
                         </div>
                     </div>
@@ -92,17 +83,13 @@
               <h1 class="post">{{ $nomeModalidade }}</h1>
           <img class="chat-logo img-circle"src="\img\{{ $logoModalidade }}" alt="Logo MatchSports"
               class="img-circle">
+              <p class="post-evento">Clique aqui e volte aos eventos de {{ $nomeModalidade }}</p>
               </a>
             </div>
-          
+
     </div>
 
 </div>
 
-<script>
-let scrollbarBottom = document.querySelector('#scrollbarBottom');
-
-scrollbarBottom.scrollTop = scrollbarBottom.scrollHeight;
-
-</script>
+<script type="text/javascript" src="{{ url('js/post.js') }}"></script>
 @endsection

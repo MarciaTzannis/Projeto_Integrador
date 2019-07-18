@@ -52,19 +52,24 @@ class feedController extends Controller
      ]);
 
      // criando novo evento
-     $evento = new Evento;
+        $evento = new Evento;
 
-     $evento->nome = $request->input('nome');
-     $evento->descricao = $request->input('descricao');
-     $evento->regiao = $request->input('regiao');
-     $evento->local = $request->input('local');
-     $evento->cidade_uf = $request->input('cidade_uf');
-     $evento->data = $request->input('data');
-     $evento->hora = $request->input('hora');
-     $evento->modalidade_fk = $request->input('modalidade_fk');
-     $evento->user_id = $request->input('user_id');
+        $evento->nome = $request->input('nome');
+        $evento->descricao = $request->input('descricao');
+        $evento->regiao = $request->input('regiao');
+        $evento->local = $request->input('local');
+        $evento->cidade_uf = $request->input('cidade_uf');
 
-     $evento->save();
+        $origDate = $request->input('data');
+        $date = str_replace('/', '-', $origDate );
+        $newDate = date("Y-m-d", strtotime($date));
+        $evento->data = $newDate;
+
+        $evento->hora = $request->input('hora');
+        $evento->modalidade_fk = $request->input('modalidade_fk');
+        $evento->user_id = $request->input('user_id');
+
+        $evento->save();
 
      // return redirect()->withInput();
      // $this->exibirDetalhes("capoeira");

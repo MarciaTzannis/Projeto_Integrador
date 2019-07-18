@@ -12,29 +12,29 @@
         <link rel="shortcut icon" href="img/Logo Match Sports.png">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-        <link rel="stylesheet" href="css/owl.carousel.min.css">
-        <link rel="stylesheet" href="css/owl.theme.default.min.css">
+        <!-- <link rel="stylesheet" href="css/owl.carousel.min.css"> -->
+        <!-- <link rel="stylesheet" href="css/owl.theme.default.min.css"> -->
         <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-        <link rel="stylesheet" href="/resources/demos/style.css">
+        <!-- <link rel="stylesheet" href="/resources/demos/style.css"> -->
         <link rel="stylesheet" href="{{ url('css/style.css') }}">
         <link href="{{ url('css/feed/blog-home.css') }}" rel="stylesheet">
 
-        <!-- Configuração da Página Fale Conosco -->
+        <!-- Configuração dos Formularios -->
         <link rel="icon" type="image/png" href="{{ url('images/icons/favicon.ico') }}" />
         <!--===============================================================================================-->
-        <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+        <!-- <link rel="stylesheet" type="text/css" href="{{ url('vendor/bootstrap/css/bootstrap.min.css') }}"> -->
         <!--===============================================================================================-->
-        <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="{{ url('fonts/font-awesome-4.7.0/css/font-awesome.min.css') }}">
         <!--===============================================================================================-->
-        <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+        <!-- <link rel="stylesheet" type="text/css" href="{{ url('vendor/animate/animate.css') }}"> -->
         <!--===============================================================================================-->
-        <link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+        <!-- <link rel="stylesheet" type="text/css" href="{{ url('vendor/css-hamburgers/hamburgers.min.css') }}"> -->
         <!--===============================================================================================-->
-        <link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+        <!-- <link rel="stylesheet" type="text/css" href="{{ url('vendor/animsition/css/animsition.min.css') }}"> -->
         <!--===============================================================================================-->
-        <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+        <!-- <link rel="stylesheet" type="text/css" href="{{ url('vendor/select2/select2.min.css') }}"> -->
         <!--===============================================================================================-->
-        <link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+        <!-- <link rel="stylesheet" type="text/css" href="{{ url('vendor/daterangepicker/daterangepicker.css') }}"> -->
         <!--===============================================================================================-->
         <link rel="stylesheet" type="text/css" href="{{ url('css/utilFaleConosco.css') }}">
         <link rel="stylesheet" type="text/css" href="{{ url('css/mainFaleConosco.css') }}">
@@ -198,10 +198,10 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-<script src="js/owl.carousel.min.js"></script>
+<!-- <script src="js/owl.carousel.min.js"></script> -->
 
 
-<script>
+<!-- <script>
 $('.owl-carousel').owlCarousel({
  loop: true,
  margin: 10,
@@ -218,7 +218,7 @@ $('.owl-carousel').owlCarousel({
      }
  }
 })
-</script>
+</script> -->
 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <script>
@@ -236,7 +236,7 @@ $('.owl-carousel').owlCarousel({
 
   } );
   </script>
-<script src="js/main.js"></script>
+<script src="{{ url('js/main.js') }}"></script>
 
 </body>
 

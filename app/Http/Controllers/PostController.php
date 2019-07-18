@@ -46,4 +46,11 @@ class PostController extends Controller
         $tarefa->save();
         return redirect ('/post');
     }
+
+    public function reloadAJAX($id){
+        // vai lá em tarefas onde a coluna done é igual a false
+        $mensagens = Mensagem::where('evento_fk','=',$id)->get();
+        // get importa a tarde para o inicio
+        return $mensagens;
+    }
 }

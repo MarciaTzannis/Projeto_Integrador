@@ -61,7 +61,12 @@ body {
 }
 
 .foto-post {
-    width: 100%
+    width: 100%;
+}
+
+.foto-feed-vazio {
+    width: 100%;
+    margin-top: 20px;
 }
 
 .descricao-feed {
@@ -148,6 +153,13 @@ body {
 	border: 0px solid #134201;
   left: 50px;
   transition: 0.7s;
+}
+
+.scrolldropup{
+  margin-bottom: -23px !important;
+  height: auto;
+  max-height: 320px;
+  overflow-x: hidden;
 }
 
 

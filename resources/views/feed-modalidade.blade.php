@@ -55,14 +55,11 @@
                 @else
 
                 <p>Ainda não tem nenhum evento criado para {{ $modalidade->nome }}. = (</p>
-                <p>Seja o primeiro criar um  evento clicando no logos ou no botão ao lado.</p>
+                <p>Seja o primeiro criar um evento clicando no logo abaixo ou no botão ao lado.</p>
 
                 <a href="/cadastroEvento/{{ $modalidade->id_modalidade }}">
                 <div class="img-feedVazio">
-                  <img class="card-img-top foto-post" src="{{ url('img') . '/' . $modalidade->logotipo }}" alt="{{ $modalidade->logotipo }}">
-                </div>
-                <div class="img-feedVazio">
-                  <img class="card-img-top foto-post" src="../img/Logo Match Sports.png" alt="{{ $modalidade->logotipo }}">
+                  <img class="card-img-top foto-feed-vazio" src="{{ url('img') . '/' . $modalidade->logotipo }}" alt="{{ $modalidade->logotipo }}">
                 </div>
                 </a>
 
@@ -90,11 +87,11 @@
 
                 <div class="card my-4">
                     <h4 class="card-header">Procure por outras modalidades:</h4>
-                    <div class="dropdown menu-suspenso menu-suspenso-feed">
+                    <div class="dropup menu-suspenso menu-suspenso-feed">
                     <button class="botao_modalidades btn btn-light dropdown-toggle" type="button" data-toggle="dropdown"> Modalidades
                             <span class="caret"></span></button>
 
-                        <ul class="dropdown-menu scrollDropdown">
+                        <ul class="dropdown-menu scrolldropup">
 
                         @foreach ( $modalidades as $modalidade )
                             <li><a href="/feed/{{ $modalidade->slug }}">{{ $modalidade->nome }}</a></li>

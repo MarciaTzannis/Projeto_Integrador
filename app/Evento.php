@@ -36,7 +36,7 @@ class Evento extends Model
     }
 
     public function getData(){
-        return $this->data;
+      return $this->data;
     }
 
     public function getHora(){

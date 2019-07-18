@@ -17,7 +17,7 @@ Route::get('/','PaginaInicialController@exibirModalidades');
 Route::get('/cadastroUsuario','CadastroUsuarioController@exibirCadastroUsuario');
 
 
-Route::get('/feed/{slug}','FeedController@exibirDetalhes');
+Route::get('/feed/{slug}','FeedController@exibirDetalhes')->middleware(['auth']);
 Route::post('/feed/{slug}', 'FeedController@salvarEvento')->middleware(['auth']);
 
 Route::get('/cadastroEvento/{id_modalidade}','CadastroEventoController@exibirCadastroEvento')->middleware(['auth']);
@@ -35,6 +35,7 @@ Route::get('auth/{provider}', 'Auth\LoginController@redirectToProvider');
 Route::get('auth/{provider}/callback', 'Auth\LoginController@handleProviderCallback');
 
 Route::get('/post/{id}', 'PostController@inicio')->middleware(['auth']);
+Route::get('/listar-tarefa/{id}', 'PostController@reloadAJAX')->middleware(['auth']);
 
 // toda vez que envia tem q ser post
 Route::post('/nova-tarefa','PostController@novaTarefa')->middleware(['auth']);

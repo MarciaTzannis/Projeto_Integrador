@@ -21,7 +21,7 @@
                 <div class="item active">
                     <img src="img/carousel1.jpg" class="img-responsive" alt="foto1" style="width:100%;">
                     <div class="carousel-caption">
-                        <a href="/cadastroUsuario"> <button class="btn">Cadastre-se aqui!</button></a>
+                        <a href="{{ url('/cadastroUsuario') }}"> <button class="btn">Cadastre-se aqui!</button></a>
                         <p>Cadastre-se na melhor rede social de esportes do planeta!</p>
                     </div>
                 </div>
@@ -86,7 +86,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-5 texto-sm">
-                <h1>Saiba mais...</h1>
+                <h2>Faça amigos e pratique esportes!</h2>
                 <hr>
                 <p class="text-justify">Seja bem-vindo à MatchSports, a comunidade de esportes em grupo que conecta
                     pessoas buscando companhia para praticar atividade física. </p>
@@ -119,9 +119,10 @@
 
 <div id="modalidades" class="container">
     <div class="dropdown menu-suspenso">
+      <h4>Encontre um grupo da sua modalidade favorita aqui!!</h4>
     <button class="botao_modalidades btn btn-light dropdown-toggle" type="button" data-toggle="dropdown"> Modalidades
             <span class="caret"></span></button>
-    
+
         <ul class="dropdown-menu scrollDropdown">
 
         @foreach ( $modalidades as $modalidade )
@@ -129,8 +130,7 @@
         @endforeach
 
         </ul>
-        
-        <h4>Encontre um grupo da sua modalidade favorita aqui!!</h4>
+
     </div>
 </div>
 
@@ -203,27 +203,27 @@
     <div id="dropDownSelect1"></div>
 
     <!--===============================================================================================-->
-    <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+    <!-- <script type="text/javascript" src="{{ url('vendor/jquery/jquery-3.2.1.min.js') }}"></script> -->
     <!--===============================================================================================-->
-    <script src="vendor/animsition/js/animsition.min.js"></script>
+    <!-- <script type="text/javascript" src="{{ url('vendor/animsition/js/animsition.min.js') }}"></script> -->
     <!--===============================================================================================-->
-    <script src="vendor/bootstrap/js/popper.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!-- <script type="text/javascript" src="{{ url('vendor/bootstrap/js/popper.js') }}"></script> -->
+    <!-- <script type="text/javascript" src="{{ url('vendor/bootstrap/js/bootstrap.min.js') }}"></script> -->
     <!--===============================================================================================-->
-    <script src="vendor/select2/select2.min.js"></script>
-    <script>
+    <!-- <script type="text/javascript" src="{{ url('vendor/select2/select2.min.js') }}"></script> -->
+    <!-- <script>
         $(".selection-2").select2({
             minimumResultsForSearch: 20,
             dropdownParent: $('#dropDownSelect1')
         });
-    </script>
+    </script> -->
     <!--===============================================================================================-->
-    <script src="vendor/daterangepicker/moment.min.js"></script>
-    <script src="vendor/daterangepicker/daterangepicker.js"></script>
+    <!-- <script type="text/javascript" src="{{ url('vendor/daterangepicker/moment.min.js') }}"></script> -->
+    <!-- <script type="text/javascript" src="{{ url('vendor/daterangepicker/daterangepicker.js') }}"></script> -->
     <!--===============================================================================================-->
-    <script src="vendor/countdowntime/countdowntime.js"></script>
+    <!-- <script type="text/javascript" src="{{ url('vendor/countdowntime/countdowntime.js') }}"></script> -->
     <!--===============================================================================================-->
-    <script src="js/main.js"></script>
+    <script type="text/javascript" src="{{ url('js/main.js') }}"></script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
@@ -237,6 +237,6 @@
 
         gtag('config', 'UA-23581568-13');
     </script>
-</section> 
+</section>
 
 @stop

@@ -101,9 +101,10 @@ body {
 }
 
 /*CSS MODALIDADES (DANIEL)*/
-
+#modalidades{
+}
 .menu-suspenso {
-    margin-top: 120px;
+    margin-top: 65px;
     margin-bottom: 20px;
     margin-right: auto;
     margin-left: auto;
@@ -144,7 +145,6 @@ body {
 }
 
 .sectionModalidades {
-    height: 100vh;
     display: flex;
     justify-content: center;
 }
@@ -160,16 +160,20 @@ body {
 
 .botao_modalidades {
     border-radius: 30px;
-    margin: 25px;
+    margin-top: 25px;
     font-size: 1.5em;
     color: #fff;
     line-height: 1.2;
     background: -webkit-linear-gradient(left, #1b9bdb, #84b331);
 }
 
+#modalidades .botao_modalidades{
+  display: none;
+  }
+
 .botao_modalidades:hover {
     border-radius: 30px;
-    margin: 25px;
+    margin-top: 25px;
     font-size: 1.5em;
     color: #fff;
     line-height: 1.2;
@@ -206,7 +210,7 @@ body {
 
 .logo {
     width: 80px;
-    height: 150px;
+    height: 125px;
     text-align: center;
     margin: 0 auto;
     padding-top: 10px;
@@ -393,8 +397,7 @@ footer p {
 }
 
 #login-dp .bottom {
-    background-color: rgba(0, 0, 0, 0.8);
-    border-top: 1px solid #ddd;
+    background-color: rgba(0, 0, 0, 0.4);
     clear: both;
     padding: 14px;
 }
@@ -457,6 +460,13 @@ footer p {
     margin-top: 60px;
 }
 
+#formulario-post {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
 #estado {
     border: 1px solid #ccc;
     height: 34px;
@@ -500,6 +510,13 @@ footer p {
     margin-top: 100px;
 }
 
+.post-evento {
+    width: 250px;
+    text-align:center;
+    font-style: normal;
+    margin-top: 0px;
+}
+
 /* novo post */
 .view-post {
     display: inline;
@@ -526,6 +543,8 @@ footer p {
 .chat .img-circle {
     display: inline-block;
     padding: 10px 0;
+    width: 60px;
+    height: 80px;
 }
 
 .texto-chat2 {
@@ -549,12 +568,12 @@ footer p {
 }
 
 .panel-chat {
-    background-image: url("../img/logoBgMatchSports.png");
+    /* background-image: url("../img/logoBgMatchSports.png");
     background-position: center;
     background-attachment:scroll;
     background-position:center center;
     background-size:contain;
-    background-repeat:no-repeat;
+    background-repeat:no-repeat; */
     overflow-y: scroll;
     height: 50vh;
     padding: 15px;
@@ -606,7 +625,7 @@ footer p {
     .carousel-inner>.item>img {
         height: auto;
     }
-}
+  }
 
 @media(max-width:767px) {
     #login-dp {
@@ -618,6 +637,8 @@ footer p {
         background-color: inherit;
         border-top: 0 none;
     }
+
+
 
     .menu-mobile {
         display: inline-block;
@@ -634,6 +655,16 @@ footer p {
     .carousel-inner>.item>img {
         height: auto;
     }
+}
+
+@media(max-width:464px){
+  .sectionModalidades{
+    display: none;
+  }
+
+  #modalidades .botao_modalidades{
+    display: inherit;
+  }
 }
 
 @media(min-width:320px) and (max-width:1024px) {
