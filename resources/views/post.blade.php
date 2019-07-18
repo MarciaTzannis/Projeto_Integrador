@@ -3,9 +3,9 @@
 @section('content')
 
 
-<div class="container">
+<div class="container-fluid post-responsive">
     <div class="row">
-        <div class="col-xs-10 view-post">
+        <div class="col-xs-9 view-post view-chat">
             @if (count($tarefasPendentes) > 0)
             <div class="panel panel-primary painel-primario">
 
@@ -64,31 +64,32 @@
                     </div>
                 @endif
                 <form action="/nova-tarefa" method="POST" id="formulario-post">
-                    <div class="panel-footer">
+                    <div class="panel-footer footer-painel">
                         <div class="input-group">
                             @csrf
                             <input type="hidden" name="evento_fk" value="{{ $evento->id_evento }}">
                             <!-- <label class="form-control">Tarefa</label> -->
                             <textarea style="resize: none" name="description" class="form-control input-sm" placeholder="Escreva aqui sua mensagem..." id="textArea"></textarea>
-                            <span class="input-group-btn">
-                                <button class="btn btn-chat btn-lg" type="submit" onclick="return validar()">Enviar</button>
+                            <span class="input-group-btn span-btn-enviar">
+                                <button class="btn btn-chat btn-lg btn-enviar" type="submit" onclick="return validar()">Enviar</button>
                             </span>
                         </div>
                     </div>
                 </form>
               </div>
             </div>
-            <div class="col-xs-2 view-post">
-              <a href="/feed/{{ $slugModalidade }}">
-              <h1 class="post">{{ $nomeModalidade }}</h1>
-          <img class="chat-logo img-circle"src="\img\{{ $logoModalidade }}" alt="Logo MatchSports"
-              class="img-circle">
-              <p class="post-evento">Clique aqui e volte aos eventos de {{ $nomeModalidade }}</p>
-              </a>
-            </div>
+        <div class="col-xs-2 view-post view-logo">
+          <a href="/feed/{{ $slugModalidade }}">
+          <h1 class="post">{{ $nomeModalidade }}</h1>
+      <img class="chat-logo img-circle"src="\img\{{ $logoModalidade }}" alt="Logo MatchSports"
+          class="img-circle">
+          <p class="post-evento">Clique aqui e volte aos eventos de {{ $nomeModalidade }}</p>
+          </a>
+        </div>
+      </div>
 
-    </div>
 
+  </div>
 </div>
 
 <script type="text/javascript" src="{{ url('js/post.js') }}"></script>

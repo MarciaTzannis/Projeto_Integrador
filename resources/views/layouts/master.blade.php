@@ -51,7 +51,7 @@
         </div>
         <button class="menu-mobile" title="menu" data-toggle="collapse" data-target=".menu-principal">&#9776;</button>
         <div class="collapse navbar-collapse menu-principal" id="myNavbar">
-            <ul class="nav navbar-nav">
+            <ul class="nav navbar-nav nav-responsive">
                 <li class="active">
                 <li><a href="/#saiba-mais">Saiba Mais</a></li>
                 <li><a href="/#modalidades">Modalidades</a></li>

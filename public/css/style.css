@@ -519,6 +519,7 @@ footer p {
 
 /* novo post */
 .view-post {
+    margin-left: 20px;
     display: inline;
     min-height: 90vh;
 }
@@ -626,7 +627,25 @@ footer p {
         height: auto;
     }
   }
+@media(max-width:900px){
+  .navbar-header img {
+  width: 160px;
+  margin: 16px 8px;
+}
 
+.nav>li>a {
+    font-size: 15px;
+    padding-top: 24px;
+    padding-left: 0px;
+}
+.view-chat{
+  width: 95%;
+}
+
+.view-logo{
+  display: none;
+}
+}
 @media(max-width:767px) {
     #login-dp {
         background-color: inherit;
@@ -639,9 +658,9 @@ footer p {
     }
 
 
-
     .menu-mobile {
         display: inline-block;
+        padding-top: 14px;
     }
 
     .carousel-inner .carousel-caption button {
@@ -664,6 +683,27 @@ footer p {
 
   #modalidades .botao_modalidades{
     display: inherit;
+  }
+
+  .painel-primario {
+    padding-bottom: 0px;
+}
+
+  .view-chat {
+      padding-left: 0px;
+  }
+
+.footer-painel{
+  background: transparent;
+}
+  .span-btn-enviar{
+    display: inline;
+  }
+
+  .btn-enviar{
+    margin-top: 10px;
+    border-radius: 50px !important;
+    width: 100%;
   }
 }
 

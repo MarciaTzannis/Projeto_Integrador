@@ -168,12 +168,19 @@ body {
 @media (max-width:576px) {
 
     .card-body h2 {
-        margin-left: 30px;
+        margin: 0px;
         display: inline-block;
-        width: 50%;
+        width: 70%;
     }
 
     .descricao-feed {
         display: inline-block;
         width: 100%;
     }
+
+@media(max-width:464px){
+
+    .evento {
+    padding: 25px;
+  }
+}
